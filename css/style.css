@@ -1,0 +1,28 @@
+@import 
+url('https://fonts.googleapis.com/css?family=Arvo|Roboto');
+
+:root {
+/*Colors*/
+    --main-color: red;
+    --background-color: #E5E5E5;
+/*Typography*/
+    --font-body: 'Arvo', monospace;
+    --font-header: 'Roboto', sans-serif;
+    --line-height: 1.2rem; 
+/**/
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+h1 {
+    font-family: var(--font-header);
+}
+
+p {
+    font-family: var(--font-body);
+    line-height: var(--line-height);
+}
+
+/** Structure **/
