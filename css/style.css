@@ -1,17 +1,21 @@
-@import 
-url('https://fonts.googleapis.com/css?family=Arvo|Roboto');
-
 :root {
+/*Media Query*/
+
 /*Colors*/
-    --main-color: red;
     --background-color: #E5E5E5;
+    --copy-text-color: #3F3F3F;
+    --medium-gray: #828282;
 /*Typography*/
-    --font-body: 'Arvo', monospace;
-    --font-header: 'Roboto', sans-serif;
+    --font-body: 'Arvo', serif;
+    --font-body-size: 0.8em;
+    --font-header: 'Catamaran', sans-serif;
     --line-height: 1.2rem; 
-/**/
+/*Masonry*/
+    --max-width: 1150px;
 }
 
+
+/*Initialize*/
 body {
     background-color: var(--background-color);
 }
@@ -22,7 +26,59 @@ h1 {
 
 p {
     font-family: var(--font-body);
+    font-size: var(--font-body-size);
     line-height: var(--line-height);
 }
 
+.centered {
+    text-align: center;
+}
+
 /** Structure **/
+
+/*controls*/
+
+header {
+    background: #ffffff;
+    position: fixed;
+    width: 240px;
+    padding: 40px 10px;
+    border-right: 1px solid var(--medium-gray);
+}
+
+    p.header {
+        font-family: var(--font-body);
+        font-size: var(--font-body-size);
+        line-height: var(--line-height);
+    }
+
+#controls {
+    width: 300px;
+}
+    .controls-header {
+        width: 240px;
+        font-family: var(--font-body);
+        font-size: var(--font-body-size);
+    }
+
+/*content*/
+
+#content {
+    border-left: 340px solid #ffffff;
+    border-right: 80px solid #ffffff;
+    min-height: 100%;
+    height: auto;
+}
+
+    /*Masonry*/
+    .masonry {
+        max-width: var(--max-width);
+    }
+    
+    /*Project*/
+    .content-project {
+        display: none;
+        max-width: var(--max-width);
+    }
+
+/*sidebar*/
