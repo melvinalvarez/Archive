@@ -1,10 +1,13 @@
 :root {
 /*Media Query*/
-
+    --mobile: 600px;
+    --tablet-landscape: 900px;
+    --desktop: 1200px;
+    --desktop-large: 1800px;
 /*Colors*/
     --background-color: #E5E5E5;
     --copy-text-color: #3F3F3F;
-    --medium-gray: #828282;
+    --medium-gray: #BDBDBD;
 /*Typography*/
     --font-body: 'Arvo', serif;
     --font-body-size: 0.8em;
