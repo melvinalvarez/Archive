@@ -1,5 +1,5 @@
 :root {
-/*Media Query*/
+/*Media Query - needs testing*/
     --mobile: 600px;
     --tablet-landscape: 900px;
     --desktop: 1200px;
@@ -65,14 +65,14 @@ p {
     }
     
     #content {
-        border-left: 340px solid #ffffff;
-        border-right: 80px solid #ffffff;
+        width: 100%;
+        border-left: 340px;
+        border-right: 80px;
         min-height: 100%;
         height: auto;
     }
 
     #sidebar {
-        background: #ffffff;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -81,7 +81,6 @@ p {
         right: 0;
         width: 40px;
         min-height: 100%;
-        border-left: 1px solid var(--medium-gray);
     }
 
 /*header elements*/
@@ -91,11 +90,16 @@ p {
     margin-left: 12px;
 }
 
-    p#header-info {
+    h1#header-info {
         font-family: var(--header-font);
         font-size: var(--header-font-size);
         line-height: var(--header-line-height);
+        font-weight: normal;
     }
+    
+#header-subinfo {
+    display: none;
+}
 
 #controls {
     width: 300px;
@@ -108,16 +112,23 @@ p {
 
 /*content elements*/
 
-    /*Masonry*/
-    .masonry {
-        max-width: var(--masonry-max-width);
+/*Masonry*/
+.masonry {
+    max-width: var(--masonry-max-width);
+}
+    
+    .container-280 {
+        width: 280px;
+        height: 280px;
+        background-color: #FAFAFA;
+        margin: 5px;
     }
     
-    /*Project*/
-    .content-project {
-        display: none;
-        max-width: var(--project-max-width);
-    }
+/*Project*/
+.content-project {
+    display: none;
+    max-width: var(--project-max-width);
+}
 
 /*sidebar elements*/
 
@@ -125,6 +136,8 @@ p {
 }
 
 #sidebar-quote {
+    text-align: right;
     transform: rotate(90deg);
-    text-align: center;
+    white-space: nowrap;
+    align-self: center;
 }
