@@ -9,13 +9,24 @@
     --copy-text-color: #3F3F3F;
     --medium-gray: #BDBDBD;
 /*Typography*/
-    --font-body: 'Arvo', serif;
-    --font-body-size: 0.8em;
-    --font-header: 'Catamaran', sans-serif;
-    --line-height: 1.2rem; 
+    --body-font: 'Arvo', serif;
+    --body-font-size: 0.8em;
+    --body-line-height: 1.2rem;
+    --header-font-size: 1.6em;
+    --header-font: 'Catamaran', sans-serif;
+    --header-line-height: 1.2em;
 /*Masonry*/
-    --max-width: 1150px;
+    --masonry-max-width: 1160px;
+/*Project*/
+    --project-max-width: 1150px;
 }
+
+/*
+To do:
+- image preloader
+- isotope
+- new page layout
+*/
 
 
 /*Initialize*/
@@ -24,13 +35,14 @@ body {
 }
 
 h1 {
-    font-family: var(--font-header);
+    font-family: var(--header-font);
+    font-size: var(--header-font-size);
 }
 
 p {
-    font-family: var(--font-body);
-    font-size: var(--font-body-size);
-    line-height: var(--line-height);
+    font-family: var(--body-font);
+    font-size: var(--body-font-size);
+    line-height: var(--body-line-height);
 }
 
 .centered {
@@ -39,20 +51,50 @@ p {
 
 /** Structure **/
 
-/*controls*/
-
-header {
-    background: #ffffff;
-    position: fixed;
-    width: 240px;
-    padding: 40px 10px;
-    border-right: 1px solid var(--medium-gray);
+#container {
+    display: flex;
 }
 
-    p.header {
-        font-family: var(--font-body);
-        font-size: var(--font-body-size);
-        line-height: var(--line-height);
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 240px;
+        padding: 20px 10px;
+        border-bottom: 1px solid var(--medium-gray);
+    }
+    
+    #content {
+        border-left: 340px solid #ffffff;
+        border-right: 80px solid #ffffff;
+        min-height: 100%;
+        height: auto;
+    }
+
+    #sidebar {
+        background: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 40px;
+        min-height: 100%;
+        border-left: 1px solid var(--medium-gray);
+    }
+
+/*header elements*/
+
+#header-info {
+    width: 200px;
+    margin-left: 12px;
+}
+
+    p#header-info {
+        font-family: var(--header-font);
+        font-size: var(--header-font-size);
+        line-height: var(--header-line-height);
     }
 
 #controls {
@@ -64,24 +106,25 @@ header {
         font-size: var(--font-body-size);
     }
 
-/*content*/
-
-#content {
-    border-left: 340px solid #ffffff;
-    border-right: 80px solid #ffffff;
-    min-height: 100%;
-    height: auto;
-}
+/*content elements*/
 
     /*Masonry*/
     .masonry {
-        max-width: var(--max-width);
+        max-width: var(--masonry-max-width);
     }
     
     /*Project*/
     .content-project {
         display: none;
-        max-width: var(--max-width);
+        max-width: var(--project-max-width);
     }
 
-/*sidebar*/
+/*sidebar elements*/
+
+#sidebar-quote-button {
+}
+
+#sidebar-quote {
+    transform: rotate(90deg);
+    text-align: center;
+}
