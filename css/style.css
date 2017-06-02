@@ -1,13 +1,15 @@
 :root {
 /*Media Query - needs testing*/
-    --mobile: 600px;
+    --mobile-screen: 600px;
     --tablet-landscape: 900px;
     --desktop: 1200px;
     --desktop-large: 1800px;
+    
 /*Colors*/
     --background-color: #E5E5E5;
     --copy-text-color: #3F3F3F;
     --medium-gray: #BDBDBD;
+    
 /*Typography*/
     --body-font: 'Arvo', serif;
     --body-font-size: 0.8em;
@@ -15,8 +17,13 @@
     --header-font-size: 1.6em;
     --header-font: 'Catamaran', sans-serif;
     --header-line-height: 1.2em;
+    
+/*Header*/
+    --header-margin: 12px;
+    
 /*Masonry*/
     --masonry-max-width: 1160px;
+    
 /*Project*/
     --project-max-width: 1150px;
 }
@@ -53,30 +60,35 @@ p {
 
 #container {
     display: flex;
+    width: 100%;
+    justify-content: space-between;
 }
 
     header {
+        margin-right: auto;
         position: fixed;
+        align-self: flex-start;
         top: 0;
         left: 0;
         width: 240px;
         padding: 20px 10px;
-        border-bottom: 1px solid var(--medium-gray);
+        min-height: 100%;
     }
     
     #content {
-        width: 100%;
-        border-left: 340px;
-        border-right: 80px;
-        min-height: 100%;
+        margin-left: 260px;
+        margin-top: 28px;
+        min-height: 80%;
         height: auto;
     }
 
     #sidebar {
+        align-self: flex-end;
         display: flex;
+        position: fixed;
         flex-direction: column;
         justify-content: space-between;
-        position: fixed;
+        margin-left: auto;
         top: 0;
         right: 0;
         width: 40px;
@@ -87,7 +99,7 @@ p {
 
 #header-info {
     width: 200px;
-    margin-left: 12px;
+    margin-left: var(--header-margin);
 }
 
     h1#header-info {
@@ -97,9 +109,13 @@ p {
         font-weight: normal;
     }
     
-#header-subinfo {
-    display: none;
+#header-info-two, 
+#header-info-three,
+#header-info-four,
+#header-info-five{
+    margin-left: var(--header-margin);
 }
+
 
 #controls {
     width: 300px;
@@ -115,10 +131,34 @@ p {
 /*Masonry*/
 .masonry {
     max-width: var(--masonry-max-width);
+    display: flex;
+    flex-wrap: wrap;
+   
 }
     
-    .container-280 {
+    .container-regular {
         width: 280px;
+        height: 280px;
+        background-color: #FAFAFA;
+        margin: 5px;
+    }
+    
+    .container-big {
+        width: 570px;
+        height: 570px;
+        background-color: #FAFAFA;
+        margin: 5px;
+    }
+    
+    .container-long {
+        width: 280px;
+        height: 570px;
+        background-color: #FAFAFA;
+        margin: 5px;
+    }
+    
+    .container-wide {
+        width: 570px;
         height: 280px;
         background-color: #FAFAFA;
         margin: 5px;
@@ -140,4 +180,33 @@ p {
     transform: rotate(90deg);
     white-space: nowrap;
     align-self: center;
+}
+
+/*Animations, Transitions*/
+.hide {
+    display: none;
+    animation: Hide 250ms ease-in-out both;
+}
+
+.reveal {
+    display: block;
+    animation: Reveal 250ms ease-in-out both;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.visible {
+    visibility: visible;
+}
+
+@keyframes Reveal {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes Hide {
+    from {opacity: 1;}
+    to {opacity: 0;}
 }

@@ -1,0 +1,28 @@
+/* On mobile screen
+- move header content to fixed top/bottom
+- hide sidebar except for back to top button
+
+*/
+@media (max-width: 600px) {
+    #container {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    header,
+    #sidebar {
+        display: none;
+    }
+    
+    #content {
+        width: 290px;
+        margin: auto;
+        margin-top: 100px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px){
+    header {
+        display: block;
+    }
+}
