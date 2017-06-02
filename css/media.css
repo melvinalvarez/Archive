@@ -1,7 +1,6 @@
 /* On mobile screen
 - move header content to fixed top/bottom
 - hide sidebar except for back to top button
-
 */
 @media (max-width: 600px) {
     #container {
@@ -21,8 +20,28 @@
     }
 }
 
+
+/* On medium screens,
+- try to use all elements from large screen
+*/
 @media (min-width: 601px) and (max-width: 900px){
-    header {
-        display: block;
-    }
+   
+}
+
+
+/* On large screens,
+- something
+*/
+@media (min-width: 901px) and (max-width: 1200px){
+ 
+}
+
+
+/* On extra large screens,
+- stretch contents to hold regular containers
+- center masonry container
+- add something cool?
+*/
+@media (min-width: 1201px) {
+
 }
