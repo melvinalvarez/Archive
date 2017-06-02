@@ -3,23 +3,23 @@ $(window).scroll(function() {
     
     var scroll = $(window).scrollTop();
     
-    if (scroll >= 150) {
+    if (scroll >= 100) {
         $("#header-info-two").addClass("reveal");
     } 
     
-    if (scroll >= 300) {
+    if (scroll >= 200) {
         $("#header-info-three").addClass("reveal");
     }
     
-    if (scroll >= 450) {
+    if (scroll >= 300) {
         $("#header-info-four").addClass("reveal");
     }
     
-    if (scroll >= 600) {
+    if (scroll >= 400) {
         $("#header-info-five").addClass("reveal");
     }
     
-    if (scroll >= 750) {
+    if (scroll >= 500) {
         $("#header-info-six").addClass("reveal");
     }
 });
