@@ -18,6 +18,10 @@ $(window).scroll(function() {
     if (scroll >= 600) {
         $("#header-info-five").addClass("reveal");
     }
+    
+    if (scroll >= 750) {
+        $("#header-info-six").addClass("reveal");
+    }
 });
 
 

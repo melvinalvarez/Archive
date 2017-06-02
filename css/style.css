@@ -112,7 +112,8 @@ p {
 #header-info-two, 
 #header-info-three,
 #header-info-four,
-#header-info-five{
+#header-info-five,
+#header-info-six{
     margin-left: var(--header-margin);
 }
 
