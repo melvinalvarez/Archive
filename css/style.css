@@ -151,7 +151,6 @@ ul, li {
     .img-container-regular {
         width: 280px;
         height: 280px;
-        background-color: #FAFAFA;
         margin: 5px;
     }
 
@@ -161,9 +160,9 @@ ul, li {
             background-color: red;
         }
         
-            .img-placeholder-regular {
-                opacity: var(--invisible);
-            }
+        .img-placeholder-regular {
+            opacity: var(--visible);
+        }
         
         .container-regular {
             width: 280px;
@@ -171,27 +170,19 @@ ul, li {
             background-color: #FAFAFA;
         }
         
-    .container-big {
-        width: 570px;
-        height: 570px;
-        background-color: #FAFAFA;
-        margin: 5px;
-    }
-    
-    .container-long {
-        width: 280px;
-        height: 570px;
-        background-color: #FAFAFA;
-        margin: 5px;
-    }
-    
-    .container-wide {
+    .img-container-wide {
         width: 570px;
         height: 280px;
-        background-color: #FAFAFA;
         margin: 5px;
     }
     
+        .container-wide {
+            width: 570px;
+            height: 280px;
+            background-color: #FAFAFA;
+            margin: 5px;
+        }
+        
 /*Project*/
 .content-project {
     display: none;
