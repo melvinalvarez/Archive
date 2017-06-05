@@ -5,10 +5,12 @@
     --desktop: 1200px;
     --desktop-large: 1800px;
     
-/*Colors*/
+/*Colors, Transparency*/
     --background-color: #E5E5E5;
     --copy-text-color: #3F3F3F;
     --medium-gray: #BDBDBD;
+    --invisible: 0;
+    --visible: 1;
     
 /*Typography*/
     --body-font: 'Arvo', serif;
@@ -52,6 +54,10 @@ p {
     line-height: var(--body-line-height);
 }
 
+ul, li {
+    list-style: none;
+}
+
 .centered {
     text-align: center;
 }
@@ -91,7 +97,7 @@ p {
         margin-left: auto;
         top: 0;
         right: 0;
-        width: 40px;
+        width: 70px;
         min-height: 100%;
     }
 
@@ -117,6 +123,11 @@ p {
     margin-left: var(--header-margin);
 }
 
+#header-info-five li a {
+    letter-spacing:.05em;
+    text-decoration: none;
+}
+
 
 #controls {
     width: 300px;
@@ -136,14 +147,30 @@ p {
     flex-wrap: wrap;
    
 }
-    
-    .container-regular {
+
+    .img-container-regular {
         width: 280px;
         height: 280px;
         background-color: #FAFAFA;
         margin: 5px;
     }
-    
+
+        .img-placeholder-regular {
+            width: 280px;
+            height: 280px;
+            background-color: red;
+        }
+        
+            .img-placeholder-regular {
+                opacity: var(--invisible);
+            }
+        
+        .container-regular {
+            width: 280px;
+            height: 280px;
+            background-color: #FAFAFA;
+        }
+        
     .container-big {
         width: 570px;
         height: 570px;
