@@ -1,4 +1,14 @@
+//Isotope Masonry
+/*global $*/
 
+$( document ).ready(function() {
+    console.log( "ready!" );
+});
+
+$('.grid').isotope({
+    layoutMode: 'packery',
+    itemSelector: '.grid-item',
+});
 
 //Scroll Toggles
 $(window).scroll(function() {

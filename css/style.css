@@ -24,7 +24,7 @@
     --header-margin: 12px;
     
 /*Masonry*/
-    --masonry-max-width: 1160px;
+    --grid-max-width: 1160px;
     
 /*Project*/
     --project-max-width: 1150px;
@@ -39,6 +39,7 @@ To do:
 
 
 /*Initialize*/
+
 body {
     background-color: var(--background-color);
 }
@@ -140,48 +141,22 @@ ul, li {
 
 /*content elements*/
 
-/*Masonry*/
-.masonry {
-    max-width: var(--masonry-max-width);
-    display: flex;
-    flex-wrap: wrap;
-   
+/*Masonry + Grid*/
+.grid {
+    max-width: var(--grid-max-width);
 }
 
-    .img-container-regular {
+    .grid-item {
         width: 280px;
         height: 280px;
-        margin: 5px;
-    }
-
-        .img-placeholder-regular {
-            width: 280px;
-            height: 280px;
-            background-color: red;
-        }
-        
-        .img-placeholder-regular {
-            opacity: var(--visible);
-        }
-        
-        .container-regular {
-            width: 280px;
-            height: 280px;
-            background-color: #FAFAFA;
-        }
-        
-    .img-container-wide {
-        width: 570px;
-        height: 280px;
+        background-color: #FAFAFA;
         margin: 5px;
     }
     
-        .container-wide {
-            width: 570px;
-            height: 280px;
-            background-color: #FAFAFA;
-            margin: 5px;
-        }
+    .grid-item--width2 {width: 570px;}
+    .grid-item--height2 {height: 570px;}
+
+
         
 /*Project*/
 .content-project {
