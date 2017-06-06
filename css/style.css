@@ -69,7 +69,7 @@ ul, li {
 /** Structure **/
 
 #container {
-    display: relative;
+    position: relative;
 }
 
     header {
@@ -157,7 +157,21 @@ ul, li {
     
     .grid-item--width2 {width: 570px;}
     .grid-item--height2 {height: 570px;}
-
+    
+    .container-regular {
+        width: 280px;
+        height: 280px;
+    }
+    
+    .container-long {
+        width: 280px;
+        height: 570px;
+    }
+    
+    .container-wide {
+        width: 570px;
+        height: 280px;
+    }
 
         
 /*Project*/

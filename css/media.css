@@ -3,7 +3,13 @@
 - hide sidebar except for back to top button
 */
 @media (max-width: 600px) {
+    header {
+        display: none;
+    }
     
+    .grid {
+        margin-left: auto;
+    }
 }
 
 
