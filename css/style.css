@@ -62,19 +62,19 @@ ul, li {
 .centered {
     text-align: center;
 }
+    
+
+/****/
 
 /** Structure **/
 
 #container {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
+    display: relative;
 }
 
     header {
         margin-right: auto;
         position: fixed;
-        align-self: flex-start;
         top: 0;
         left: 0;
         width: 240px;
@@ -144,6 +144,8 @@ ul, li {
 /*Masonry + Grid*/
 .grid {
     max-width: var(--grid-max-width);
+    margin-left: 280px;
+    margin-top: 30px;
 }
 
     .grid-item {

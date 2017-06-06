@@ -3,27 +3,7 @@
 - hide sidebar except for back to top button
 */
 @media (max-width: 600px) {
-    #container {
-        display: flex;
-        justify-content: space-between;
-    }
     
-    header,
-    #sidebar {
-        display: none;
-    }
-    
-    #content {
-        width: 290px;
-        margin: auto;
-        margin-top: 100px;
-    }
-    
-        /*fix to mantain aspect ratio*/
-        .container-wide {
-            width: 280px;
-            height: 140px;
-        }
 }
 
 
