@@ -2,7 +2,13 @@
 /*global $*/
 
 $( document ).ready(function() {
+    
+    // using unveil.js for preloading images
+    // add preloader img on src tag
+    // then add final image on data-src tag
+    $("img").unveil();
     console.log( "ready!" );
+    
 });
 
 $('.grid').isotope({

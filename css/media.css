@@ -10,6 +10,16 @@
     .grid {
         margin-left: auto;
     }
+    
+    .grid-item--width2,
+    .container-wide {
+        height: 138px;
+        width: 280px;
+    }
+    
+    #sidebar {
+        display: none;
+    }
 }
 
 
