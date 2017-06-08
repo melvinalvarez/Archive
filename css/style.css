@@ -144,7 +144,7 @@ ul, li {
 /*Masonry + Grid*/
 .grid {
     max-width: var(--grid-max-width);
-    margin-left: 280px;
+    margin-left: 240px;
     margin-top: 30px;
 }
 

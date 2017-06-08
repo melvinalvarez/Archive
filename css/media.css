@@ -8,7 +8,7 @@
     }
     
     .grid {
-        margin-left: auto;
+        margin: auto;
     }
     
     .grid-item--width2,
