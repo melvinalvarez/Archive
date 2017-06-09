@@ -28,14 +28,16 @@ tablets, touch
 - try to use all elements from large screen
 */
 @media (min-width: 601px) and (max-width: 900px){
-   
+   #sidebar {
+       display: none;
+   }
 }
 
 
 /* On large screens,
 - something
 */
-@media (min-width: 901px) and (max-width: 1200px){
+@media (min-width: 901px) and (max-width: 1280px){
  
 }
 
@@ -45,6 +47,6 @@ tablets, touch
 - center masonry container
 - add something cool?
 */
-@media (min-width: 1201px) {
+@media (min-width: 1281px) {
 
 }

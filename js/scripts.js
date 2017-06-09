@@ -42,6 +42,18 @@ $(window).scroll(function() {
     }
 });
 
+//Project Views
+// on click, change to specified bg color for project, hide masonry, and reveal project div
+$( "#proj-36days" ).click(function() {
+  $('body').css("background-color", "yellow");
+  $( "#masonry" ).animate({
+        opacity: 0,
+        //height: "toggle"
+  }, 500, function() {
+    // changed display to none to avoid the scroll
+  }).delay(100).css("display", "none");
+});
+
 
 //SIDEBAR
 
