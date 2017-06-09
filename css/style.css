@@ -11,6 +11,7 @@
     --medium-gray: #BDBDBD;
     --invisible: 0;
     --visible: 1;
+    --proj-darkroom-bg: #1A1A1A;
     
 /*Typography*/
     --body-font: 'Arvo', serif;
@@ -176,12 +177,23 @@ ul, li {
 
         
 /*Project*/
-.content-project {
-    display: none;
+#project {
     max-width: var(--project-max-width);
+    margin-left: 240px;
+    margin-top: 30px;
 }
 
+    #project-36DaysofType {
+        display: none;
+    }
+    
+    .project-line {
+        border-top: 1px solid #8c8b8b;
+        
+    }
+
 /*sidebar elements*/
+
 
 #sidebar-quote-button {
 }
