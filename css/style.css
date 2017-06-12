@@ -60,6 +60,14 @@ ul, li {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: red;
+}
+
 .centered {
     text-align: center;
 }
@@ -81,6 +89,7 @@ ul, li {
         width: 240px;
         padding: 20px 10px;
         min-height: 100%;
+        z-index: 5;
     }
     
     #content {
@@ -89,6 +98,25 @@ ul, li {
         min-height: 80%;
         height: auto;
     }
+    
+        .content-container,
+        #masonry {
+            position: relative;
+        }
+    
+        .content-container {
+            border-left: 280px solid var(--background-color);
+            border-right: 70px solid var(--background-color);
+            min-height: 100%;
+            height: auto;
+        }
+        
+        .grid {
+            padding: 30px 0 0 0;
+            max-width: 1160px;
+            margin: 0 auto;
+    
+}
 
     #sidebar {
         align-self: flex-end;
@@ -101,6 +129,7 @@ ul, li {
         right: 0;
         width: 50px;
         min-height: 100%;
+        z-index: 5;
     }
 
 /*header elements*/
@@ -143,12 +172,6 @@ ul, li {
 /*content elements*/
 
 /*Masonry + Grid*/
-.grid {
-    max-width: var(--grid-max-width);
-    margin-left: 240px;
-    margin-top: 30px;
-    
-}
 
     .grid-item {
         width: 280px;
@@ -233,3 +256,4 @@ ul, li {
     from {opacity: 1;}
     to {opacity: 0;}
 }
+

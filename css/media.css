@@ -17,6 +17,10 @@
         width: 280px;
     }
     
+    .content-container {
+        border: 0;
+    }
+    
     #sidebar {
         display: none;
     }
@@ -49,4 +53,16 @@ tablets, touch
 */
 @media (min-width: 1281px) {
 
+}
+
+
+/*Columns and Grids*/
+
+.col-container {
+    display: flex;
+}
+
+.col-1 {
+    width: 1600px;
+    padding: 0 10px;
 }
