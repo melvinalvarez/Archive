@@ -173,7 +173,10 @@ a:visited {
 
 
 /*img unveil transition*/
-
+img {
+    opacity: 0;
+     transition: opacity .3s ease-in;
+}
 
 /*Masonry + Grid*/
 
