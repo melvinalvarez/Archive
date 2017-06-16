@@ -15,16 +15,6 @@ $( document ).ready(function() {
         );
     });
     
-    //image-grid placeholder colors
-    var myColors = [
-        '#f00', '#abc', '#123'
-    ];
-    var i = 0;
-    $('.grid-item').each(function() {
-        $(this).css('background-color', myColors[i]);
-        i = (i + 1) % myColors.length;
-    });
-    
     console.log( "ready!" );
     
 });

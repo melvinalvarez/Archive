@@ -153,7 +153,7 @@ a:visited {
 #header-info-six{
     margin-left: var(--header-margin);
 }
-
+ 
 #header-info-five li a {
     letter-spacing:.05em;
     text-decoration: none;
@@ -175,7 +175,8 @@ a:visited {
 /*img unveil transition*/
 img {
     opacity: 0;
-     transition: opacity .3s ease-in;
+    transition: opacity .3s ease-in;
+    transition: position .2s ease-in;
 }
 
 /*Masonry + Grid*/
