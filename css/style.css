@@ -38,6 +38,7 @@ To do:
 - new page layout
 */
 
+
 /*Initialize*/
 
 body {
@@ -84,7 +85,7 @@ a:visited {
         margin-right: auto;
         position: fixed;
         top: 0;
-        left: 0;
+        left: 24px;
         width: 240px;
         padding: 20px 10px;
         min-height: 100%;
@@ -170,7 +171,13 @@ a:visited {
 
 /*content elements*/
 
+
+/*img unveil transition*/
+
+
 /*Masonry + Grid*/
+
+
 
     .grid-item {
         width: 280px;
