@@ -26,16 +26,16 @@ $('.grid').isotope({
 
 //Scroll Toggles
 //to do: refine toggles 
-$(window).scroll(function() {
+//$(window).scroll(function() {
     
-    var scroll = $(window).scrollTop();
+//    var scroll = $(window).scrollTop();
     
-    if (scroll >= 100) {$("#header-info-two").addClass("reveal");} 
-    if (scroll >= 200) {$("#header-info-three").addClass("reveal");}
-    if (scroll >= 300) {$("#header-info-four").addClass("reveal");}
-    if (scroll >= 400) {$("#header-info-five").addClass("reveal");}
-    if (scroll >= 500) {$("#header-info-six").addClass("reveal");}
-});
+//    if (scroll >= 100) {$("#header-info-two").addClass("reveal");} 
+//    if (scroll >= 200) {$("#header-info-three").addClass("reveal");}
+//   if (scroll >= 300) {$("#header-info-four").addClass("reveal");}
+//    if (scroll >= 400) {$("#header-info-five").addClass("reveal");}
+//    if (scroll >= 500) {$("#header-info-six").addClass("reveal");}
+//});
 
 //Project Views
 // on click, change to specified bg color for project, hide masonry, and reveal project div
