@@ -149,7 +149,7 @@ hr { margin-left: 10px;}
         font-family: var(--header-font);
         font-size: calc(var(--header-font-size) - 40%);
         margin-left: -40px;
-        line-height: var(--header-line-height);
+        line-height: calc(var(--header-line-height) + 40%);
         font-weight: normal;
     }
 
