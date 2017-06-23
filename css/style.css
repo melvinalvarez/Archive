@@ -16,6 +16,7 @@
     --visible: 1;
     --black: #1A1A1A;
     --light-gray: #FAFAFA;
+    --white: #FFFFFF;
     
 /*Typography*/
     --body-font: 'Arvo', serif;
@@ -33,6 +34,9 @@
     --one-column: 1150px;
     --two-column: 570px;
     --four-column: 280px;
+    
+/*Mobile Menu*/
+    --mobile-menu-height: 80px;
 }
 
 /*
@@ -113,6 +117,16 @@ hr { margin-left: 10px;}
             max-width: 1160px;
             margin: 0 auto;
         }
+        
+/* Menu Container
+- mobile and tablet structure
+*/
+
+#menu-container {
+    width: 100%;
+    height: var(--mobile-menu-height);
+    background-color: var(--white);
+}
         
 /*grid system for non-index content
 - col-1 spans same width as masonry container
