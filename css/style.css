@@ -126,6 +126,8 @@ hr { margin-left: 10px;}
     width: 100%;
     height: var(--mobile-menu-height);
     background-color: var(--white);
+    position: fixed;
+    margin: -8px;
 }
         
 /*grid system for non-index content
@@ -142,6 +144,7 @@ hr { margin-left: 10px;}
     border-right: 70px solid var(--background-color);
     min-height: 100%;
     height: auto;
+    border-top: 200px;
 }
     .col-1 {
         max-width: 1150px;
