@@ -229,11 +229,12 @@ hr { margin-left: 10px;}
             
             .shop-line {
                 width: 100px;
+                left: 20px;
                 
             }
             
                 .shop-line:after {
-                    right: -100px;
+                    right: -110px;
                 }
             
 
