@@ -1,7 +1,9 @@
 :root {
 /*Media Query - needs testing*/
     --mobile-screen: 600px;
+    --min-tablet: 601px;
     --tablet-landscape: 900px;
+    --min-desktop: 901px;
     --desktop: 1200px;
     --desktop-large: 1800px;
     
@@ -12,7 +14,8 @@
     --medium-gray: #BDBDBD;
     --invisible: 0;
     --visible: 1;
-    --proj-darkroom-bg: #1A1A1A;
+    --black: #1A1A1A;
+    --light-gray: #FAFAFA;
     
 /*Typography*/
     --body-font: 'Arvo', serif;
@@ -27,15 +30,13 @@
     
 /*Masonry*/
     --grid-max-width: 1160px;
-    
-/*Project*/
-    --project-max-width: 1150px;
+    --one-column: 1150px;
+    --two-column: 570px;
+    --four-column: 280px;
 }
 
 /*
 To do:
-- image preloader
-- isotope
 - new page layout
 */
 
@@ -113,7 +114,7 @@ hr { margin-left: 10px;}
             margin: 0 auto;
         }
         
-/*grid system for non index content
+/*grid system for non-index content
 - col-1 spans same width as masonry container
 - maintain consistent 10px gutter between cols
 - cols are wrapped in flex container (#col-container)
@@ -311,21 +312,6 @@ img {
     }
 
         
-/*Project*/
-#project {
-    max-width: var(--project-max-width);
-    margin-left: 240px;
-    margin-top: 30px;
-}
-
-    #project-36DaysofType {
-        display: none;
-    }
-    
-    .project-line {
-        border-top: 1px solid #8c8b8b;
-        
-    }
 
 /*sidebar elements*/
 
