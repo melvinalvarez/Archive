@@ -149,9 +149,93 @@ hr { margin-left: 10px;}
         font-family: var(--header-font);
         font-size: calc(var(--header-font-size) - 40%);
         margin-left: -40px;
+        margin-bottom: 10p;
         line-height: calc(var(--header-line-height) + 40%);
         font-weight: normal;
     }
+    
+    .header-divider {
+        height: 1px;
+        width: 200px;
+        background-color: gray;
+        margin-left: var(--header-margin);
+    }
+    
+    .menu-line {
+        display: inline;
+    }
+    
+        .works-line,
+        .about-line,
+        .process-line,
+        .resources-line,
+        .shop-line {
+            height: 2px;
+            background-color: red;
+            position: relative;
+            top: -18px;
+            border-radius: 1px;
+        }
+        
+        .works-line:after, 
+        .about-line:after,
+        .process-line:after,
+        .resources-line:after,
+        .shop-line:after {
+            content: "\00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0";
+            position: relative;
+            top: -18px;
+            height: 26px;
+            width: 26px;
+            border-radius: 50%;
+            background-color: #1A1A1A;
+        }
+        
+            .works-line {
+                width: 90px;
+                left: 30px;
+            } 
+            
+                .works-line:after {
+                    right: -100px;
+                }
+            
+            .about-line {
+                width: 90px;
+                left: 30px;
+            }
+            
+                .about-line:after {
+                    right: -100px;
+                }
+            
+            .process-line {
+                width: 80px;
+                left: 40px;
+            }
+            
+                .process-line:after {
+                    right: -90px;
+                }
+            
+            .resources-line {
+                width: 60px;
+                left: 60px;
+            }
+            
+                .resources-line:after {
+                    right: -70px;
+                }
+            
+            .shop-line {
+                width: 100px;
+                
+            }
+            
+                .shop-line:after {
+                    right: -100px;
+                }
+            
 
 #controls {
     width: 300px;
