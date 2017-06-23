@@ -95,8 +95,6 @@ hr { margin-left: 10px;}
         z-index: 5;
     }
     
-   
-    
         .content-container,
         #masonry {
             position: relative;
@@ -113,8 +111,34 @@ hr { margin-left: 10px;}
             padding: 20px 0 0 0;
             max-width: 1160px;
             margin: 0 auto;
-    
+        }
+        
+/*grid system for non index content
+- col-1 spans same width as masonry container
+- maintain consistent 10px gutter between cols
+- cols are wrapped in flex container (#col-container)
+*/
+
+#col-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    border-left: 280px solid var(--background-color);
+    border-right: 70px solid var(--background-color);
+    min-height: 100%;
+    height: auto;
 }
+    .col-1 {
+        max-width: 1150px;
+    }
+    
+    .col-2 {
+        max-width: 570px;
+    }
+    
+    .col-4 {
+        max-width: 280px;
+    }
 
     #sidebar {
         align-self: flex-end;
