@@ -7,6 +7,10 @@
         display: none;
     }
     
+    #menu-container {
+      display: block;
+    }
+    
     .grid {
         margin: auto;
         max-width: 570px;
@@ -18,6 +22,7 @@
         width: 280px;
     }
     
+    #col-container,
     .content-container {
         border: 0;
         margin: 0 auto;
@@ -40,10 +45,15 @@ tablets, touch
       display: none;
   }
   
+  #menu-container {
+      display: block;
+  }
+  
+  #col-container,
   .content-container {
       border: 0;
       margin: 0 auto;
-      width: 80%;
+      width: 86%;
   }
   
   .grid {
@@ -63,8 +73,12 @@ tablets, touch
 @media (min-width: 901px) and (max-width: 1280px){
  
  header {
-     padding: 10px 0;
-     left: 14px;
+    padding: 10px 0;
+    left: 14px;
+ }
+ 
+ #menu-container {
+    display: none;
  }
  
 }

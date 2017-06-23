@@ -1,8 +1,6 @@
 //Isotope Masonry
 /*global $*/
 
-
-
 $( document ).ready(function() {
     
     // using unveil.js for preloading images
@@ -33,3 +31,7 @@ $("#masonry-darkroom").click(function() {
 //SIDEBAR
 
 //Quote Generator
+
+
+//WebVR AFrame voice-control 
+//listen to iOS Update on WebkitSpeech
