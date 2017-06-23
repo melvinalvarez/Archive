@@ -46,7 +46,8 @@ tablets, touch
   }
   
   #menu-container {
-      display: block;
+      display: flex;
+      justify-content: space-between;
   }
   
   #col-container,
