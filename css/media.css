@@ -92,16 +92,8 @@ tablets, touch
 */
 @media (min-width: 1281px) {
 
-}
+#menu-container {
+    display: none;
+ }
 
-
-/*Columns and Grids*/
-
-.col-container {
-    display: flex;
-}
-
-.col-1 {
-    width: 1600px;
-    padding: 0 10px;
 }

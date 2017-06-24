@@ -133,11 +133,11 @@ hr { margin-left: 10px;}
 }
 
     #menu-button {
-    
+    flex-grow: 1;
     }
     
     #menu-icons-container {
-        width: 40%;
+        flex-grow: 1;
         margin-top: 20px;
         display: flex;
         justify-content: space-between;
@@ -227,7 +227,7 @@ hr { margin-left: 10px;}
         .resources-line,
         .shop-line {
             height: 2px;
-            background-color: red;
+            background-color: var(--medium-gray);
             position: relative;
             top: -18px;
             border-radius: 1px;
