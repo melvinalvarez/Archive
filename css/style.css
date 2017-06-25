@@ -160,16 +160,28 @@ hr { margin-left: 10px;}
     height: auto;
     border-top: 200px;
 }
+
+    #content-container {
+      display: flex;  
+    }
+    
+    .col {
+      width: 100%;
+    }
+    
     .col-1 {
-        max-width: 1150px;
+      flex-grow: 1;
+      width: 860px;
     }
     
     .col-2 {
-        max-width: 570px;
+      flex-grow: 1;
+      max-width: 570px;
     }
     
     .col-4 {
-        max-width: 280px;
+      flex-grow: 1;
+      max-width: 280px;
     }
 
     #sidebar {
