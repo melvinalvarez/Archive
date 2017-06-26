@@ -22,11 +22,10 @@
         width: 280px;
     }
     
-    #col-container,
-    .content-container {
+    #col-container {
         border: 0;
         margin: 0 auto;
-        width: 80%;
+        width: 100%;
     }
     
     #sidebar {
@@ -50,11 +49,10 @@ tablets, touch
       justify-content: space-between;
   }
   
-  #col-container,
-  .content-container {
+  #col-container {
       border: 0;
       margin: 0 auto;
-      width: 86%;
+      width: 100%;
   }
   
   .grid {
@@ -73,10 +71,6 @@ tablets, touch
 */
 @media (min-width: 901px) and (max-width: 1280px){
  
- header {
-    padding: 10px 0;
-    left: 14px;
- }
  
  #menu-container {
     display: none;
@@ -97,3 +91,4 @@ tablets, touch
  }
 
 }
+

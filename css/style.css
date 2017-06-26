@@ -19,8 +19,10 @@
     --white: #FFFFFF;
     
 /*Typography*/
-    --body-font: 'Arvo', serif;
-    --body-font-size: 0.8em;
+    --body-font: 'Catamaran', serif;
+    --body-sub-font: 'Arvo', serif;
+    --body-font-size: 1.0em;
+    --body-sub-font-size: 0.8em;
     --body-line-height: 1.2rem;
     --header-font-size: 1.4em;
     --header-font: 'Catamaran', sans-serif;
@@ -80,6 +82,9 @@ a:visited {
 
 hr { margin-left: 10px;}
     
+button {
+    border-style: none;
+}
 
 /** **/
 
@@ -157,22 +162,33 @@ hr { margin-left: 10px;}
     border-left: 280px solid var(--background-color);
     border-right: 70px solid var(--background-color);
     min-height: 100%;
+    width: 1160px;
     height: auto;
-    border-top: 200px;
+    position: relative;
+    top: 9px;
 }
+
+    #col-container-header {}
+    #col-container-header-menu {
+        height: 68px;
+    }
 
     #content-container {
       display: flex;  
+      flex-wrap: wrap;
     }
     
-    .col {
-      width: 100%;
-    }
     
     .col-1 {
-      flex-grow: 1;
-      width: 860px;
+      flex-grow: 3;
+      width: 100%;
+      position: relative;
     }
+    
+        .col-1 h1,
+        .col-1 p {
+            margin-left: var(--header-margin);;
+        }
     
     .col-2 {
       flex-grow: 1;
@@ -182,7 +198,12 @@ hr { margin-left: 10px;}
     .col-4 {
       flex-grow: 1;
       max-width: 280px;
+      margin-left: 10px;
     }
+    
+        .col-4:last-child {
+            margin-left: 0;
+        }
 
     #sidebar {
         align-self: flex-end;
@@ -224,13 +245,13 @@ hr { margin-left: 10px;}
     
     .header-divider {
         height: 1px;
-        width: 200px;
+        width: 80%;
         background-color: gray;
         margin-left: var(--header-margin);
     }
     
     .menu-line {
-        display: inline;
+        margin-bottom: 10px;
     }
     
         .works-line,
@@ -242,21 +263,8 @@ hr { margin-left: 10px;}
             background-color: var(--medium-gray);
             position: relative;
             top: -18px;
+            margin-left: 40px;
             border-radius: 1px;
-        }
-        
-        .works-line:after, 
-        .about-line:after,
-        .process-line:after,
-        .resources-line:after,
-        .shop-line:after {
-            content: "\00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0";
-            position: relative;
-            top: -18px;
-            height: 26px;
-            width: 26px;
-            border-radius: 50%;
-            background-color: #1A1A1A;
         }
         
             .works-line {
@@ -358,6 +366,14 @@ img {
 
 /*sidebar elements*/
 
+#sidebar-vr-button {
+    background-image: url("https://storage.googleapis.com/melvin-images/assets/icon-VR-sm.svg");
+    height: 20px;
+    width: 40px;
+    position: relative;
+    top: 30px;
+    right: 10px;
+}
 
 #sidebar-quote-button {
     margin-top: 50px;
