@@ -28,6 +28,10 @@
         width: 100%;
     }
     
+        #col-container-header .header-divider {
+        width: 80%;
+    }
+    
     #sidebar {
         display: none;
     }
