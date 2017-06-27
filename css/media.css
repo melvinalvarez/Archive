@@ -75,6 +75,18 @@ tablets, touch
 */
 @media (min-width: 901px) and (max-width: 1280px){
  
+ #col-container {
+    width: 870px;
+ }
+ 
+     .content-about .col-1 p {
+            margin-left: 20px;
+            margin-top: 30px;
+        }
+        
+ .header-divider {
+     margin-left: 0;
+ }
  
  #menu-container {
     display: none;
