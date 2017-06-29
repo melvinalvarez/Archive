@@ -101,13 +101,15 @@ button {
 
     header {
         margin-right: auto;
+        
         position: fixed;
         top: 0;
-        left: 24px;
+        left: -10px;
         width: 240px;
-        padding: 20px 10px;
+        padding: 20px 30px;
         min-height: 100%;
         z-index: 5;
+        background-color: white;
     }
     
         .content-container,
@@ -140,6 +142,7 @@ button {
     margin: -8px;
     display: flex;
     justify-content: space-between;
+    z-index: 10]]]]]];
 }
 
     #menu-button {
@@ -277,7 +280,6 @@ button {
         height: 1px;
         width: 80%;
         background-color: gray;
-        margin-left: var(--header-margin);
     }
     
     .menu-line {
