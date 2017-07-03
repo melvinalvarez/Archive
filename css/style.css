@@ -39,7 +39,14 @@
     
 /*Mobile Menu*/
     --mobile-menu-height: 80px;
+    
+/*Z-Layers*/
+    --send-to-front: 20;
+    --middle: 10;
+    --send-to-back: 1;
 }
+
+
 
 /*Initialize*/
 
@@ -142,7 +149,7 @@ button {
     margin: -8px;
     display: flex;
     justify-content: space-between;
-    z-index: 10]]]]]];
+    z-index: var(--send-to-front);
 }
 
     #menu-button {
@@ -192,7 +199,8 @@ button {
     }
 
     #content-container {
-      display: flex;  
+      display: flex;
+      z-index: var(--send-to-back);
       flex-wrap: wrap;
       justify-content: space-between;
     }
