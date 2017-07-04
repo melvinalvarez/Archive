@@ -32,6 +32,10 @@
         width: 80%;
     }
     
+    #content-container {
+        width: var(--four-column);
+    }
+    
     #sidebar {
         display: none;
     }
