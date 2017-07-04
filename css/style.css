@@ -157,7 +157,7 @@ button {
     }
     
     #menu-icons-container {
-        flex-grow: 1;
+        width: 200px;
         margin-top: 20px;
         display: flex;
         justify-content: space-between;
