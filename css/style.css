@@ -8,7 +8,7 @@
     --desktop-large: 1800px;
     
 /*Colors, Transparency*/
-    --background-color: #F9F9F9; /*#E5E5E5*/
+    --background-color: #F9F9F9+; /*#E5E5E5*/
     --copy-text-color: #3F3F3F;
     --menu-text-color: #3A3A3A;
     --medium-gray: #BDBDBD;
@@ -45,7 +45,6 @@
     --middle: 10;
     --send-to-back: 1;
 }
-
 
 
 /*Initialize*/
