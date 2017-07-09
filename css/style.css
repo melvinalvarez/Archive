@@ -8,7 +8,7 @@
     --desktop-large: 1800px;
     
 /*Colors, Transparency*/
-    --background-color: #F9F9F9+; /*#E5E5E5*/
+    --background-color: #F9F9F9; /*#E5E5E5*/
     --copy-text-color: #3F3F3F;
     --menu-text-color: #3A3A3A;
     --medium-gray: #BDBDBD;
@@ -261,10 +261,18 @@ button {
 
 /*header elements*/
 
-#header-info {
+.header-info {
     width: 200px;
     marginco-left: var(--header-margin);
 }
+
+    .box {
+        background-color: var(--medium-gray);
+        width: 30px;
+        height: 3px;
+        position: relative;
+        top: 14px;
+    }
 
     ul#header-info,
     h1#header-info{
@@ -293,64 +301,33 @@ button {
         margin-bottom: 10px;
     }
     
-        .works-line,
-        .about-line,
-        .process-line,
-        .resources-line,
-        .shop-line {
-            height: 2px;
-            background-color: var(--medium-gray);
-            position: relative;
-            top: -18px;
-            margin-left: 40px;
-            border-radius: 1px;
+        .menu-line .box {
+            top: 20px;
         }
+    
         
             .works-line {
-                width: 90px;
-                left: 30px;
+                left: 70px;
             } 
             
-                .works-line:after {
-                    right: -100px;
-                }
-            
             .about-line {
-                width: 90px;
-                left: 30px;
+                left: 70px;
             }
-            
-                .about-line:after {
-                    right: -100px;
-                }
             
             .process-line {
-                width: 80px;
-                left: 40px;
+                left: 84px;
             }
             
-                .process-line:after {
-                    right: -90px;
-                }
             
             .resources-line {
-                width: 60px;
-                left: 60px;
+                left: 104px;
             }
             
-                .resources-line:after {
-                    right: -70px;
-                }
             
             .shop-line {
-                width: 100px;
-                left: 20px;
+                left: 60px;
                 
             }
-            
-                .shop-line:after {
-                    right: -110px;
-                }
             
 
 #controls {

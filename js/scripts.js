@@ -22,9 +22,19 @@ $('.grid').isotope({
     itemSelector: '.grid-item',
 });
 
-//Dark Room
-$("#masonry-darkroom").click(function() {
 
+// Cursor Interactions
+var box=$(".box");
+var boxCenter=[box.offset().left+box.width()/2, box.offset().top+box.height()/2];
+
+$(document).mousemove(function(e){    
+    
+	var angle = Math.atan2(e.pageX- boxCenter[0],- (e.pageY- boxCenter[1]) )*(270/Math.PI);	    
+    
+    box.css({ "-webkit-transform": 'rotate(' + angle + 'deg)'});    
+    box.css({ '-moz-transform': 'rotate(' + angle + 'deg)'});
+    box.css({ 'transform': 'rotate(' + angle + 'deg)'});
+    
 });
 
 
