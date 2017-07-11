@@ -17,10 +17,12 @@
     --black: #1A1A1A;
     --light-gray: #FAFAFA;
     --white: #FFFFFF;
+    --yellow: #FFD600;
+    --pink: #F416EB;
     
 /*Typography*/
     --body-font: 'Catamaran', serif;
-    --body-sub-font: 'Arvo', serif;
+    --body-sub-font: 'Anonymous Pro', monospace;
     --body-font-size: 1.2em;
     --body-sub-font-size: 0.8em;
     --body-line-height: 1.2rem;
@@ -81,6 +83,7 @@ ul, li {
 
 a {
     text-decoration: none;
+    cursor: none;
 }
 
 a:visited {
@@ -97,11 +100,12 @@ button {
     border-style: none;
 }
 
-/** **/
+/****/
 
 /** Structure **/
 
 #container {
+    cursor: none;
     position: relative;
 }
 
@@ -161,6 +165,19 @@ button {
         display: flex;
         justify-content: space-between;
     }
+    
+    .menu-social {
+        position: relative;
+        top: -24px;
+        font-family: 'Anonymous Pro', monospace;
+        font-size: 0.56em;
+        line-height: 1.2em;
+        color: var(--menu-text-color);
+    }
+    
+        .menu-social a {
+            text-decoration: underline;
+        }
 
         
 /*grid system for non-index content
@@ -263,13 +280,13 @@ button {
 
 .header-info {
     width: 200px;
-    marginco-left: var(--header-margin);
+    margin-left: var(--header-margin);
 }
 
     .box {
         background-color: var(--medium-gray);
-        width: 30px;
-        height: 3px;
+        width: 36px;
+        height: 1px;
         position: relative;
         top: 14px;
     }
@@ -297,6 +314,15 @@ button {
         background-color: gray;
     }
     
+    .menu-number {
+        display: inline-block;
+        font-family: var(--body-sub-font);
+        font-size: 11px;
+        color: var(--menu-text-color);
+        position: relative;
+        top: -10px;
+    }
+    
     .menu-line {
         margin-bottom: 10px;
     }
@@ -307,25 +333,25 @@ button {
     
         
             .works-line {
-                left: 70px;
+                left: 90px;
             } 
             
             .about-line {
-                left: 70px;
+                left: 90px;
             }
             
             .process-line {
-                left: 84px;
-            }
-            
-            
-            .resources-line {
                 left: 104px;
             }
             
             
+            .resources-line {
+                left: 124px;
+            }
+            
+            
             .shop-line {
-                left: 60px;
+                left: 80px;
                 
             }
             
@@ -402,6 +428,12 @@ img {
     align-self: center;
 }
 
+    #sidebar-quote p {
+        font-family: 'Anonymous Pro', monospace;
+        font-size: 12px;
+        color: var(--menu-text-color);
+    }
+
 /*Animations, Transitions*/
 .hide {
     display: none;
@@ -458,6 +490,28 @@ img {
     -moz-animation-delay: 0.3s;
     animation-delay: 0.3s;
   }
+  
+  /*Cursor Trail*/
+  
+  .cursor-trail {
+    position: absolute;
+    z-index: 10000;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    background-color: white;
+    pointer-events: none;
+}
+
+.yellow-trail {
+    background-color: black;
+}
   
   /*Notes*/
   
