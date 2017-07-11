@@ -403,7 +403,18 @@ img {
         width: 570px;
         height: 280px;
     }
+    
+/*Masonry Elements*/
 
+    #masonry-36days img:hover {
+        box-sizing: border-box;
+        width: 280px;
+        height: 280px;
+        border: 2px solid;
+        border-color: black;
+        transition: border-color .5s;
+    }
+    
         
 
 /*sidebar elements*/
@@ -426,11 +437,13 @@ img {
     transform: rotate(90deg);
     white-space: nowrap;
     align-self: center;
+    position: relative;
+    right: 10px;
 }
 
     #sidebar-quote p {
         font-family: 'Anonymous Pro', monospace;
-        font-size: 12px;
+        font-size: 14px;
         color: var(--menu-text-color);
     }
 
