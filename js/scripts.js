@@ -37,6 +37,14 @@ $(document).mousemove(function(e){
     
 });
 
+//Reveal Project Title on Hover
+
+$("#twitter").hover(function(event) {
+    $("#click-guide").css({top: event.clientY-20, left: event.clientX}).show();
+}, function() {
+    $("#click-guide").hide();
+});
+
 // Cursor Trail
 
 (function($) {

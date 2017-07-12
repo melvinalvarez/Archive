@@ -320,12 +320,19 @@ button {
         font-size: 11px;
         color: var(--menu-text-color);
         position: relative;
-        top: -10px;
+        top: -14px;
     }
     
     .menu-line {
         margin-bottom: 10px;
     }
+    
+    
+    
+        .menu-line a:hover {
+            color: blue;
+            transition: color 1s;
+        }
     
         .menu-line .box {
             top: 20px;
@@ -334,7 +341,23 @@ button {
         
             .works-line {
                 left: 90px;
-            } 
+            }
+            
+            .menu-line-works {
+                display: inline-block;
+                position: relative;
+                transition: all .5s;
+            }
+            
+            .menu-line-works:hover {
+                display: inline-block;
+                border: 1px solid var(--menu-text-color);
+                position: relative;
+                padding-left: 20px;
+                padding-right: 90px;
+                left: -20px;
+            }
+        
             
             .about-line {
                 left: 90px;
@@ -354,6 +377,13 @@ button {
                 left: 80px;
                 
             }
+            
+    /*Cursor Guides*/
+    
+        #click-guide {
+            position: absolute;
+            display: none;
+        }
             
 
 #controls {
@@ -406,7 +436,38 @@ img {
     
 /*Masonry Elements*/
 
-    #masonry-36days img:hover {
+/*Hover Interactions*/
+
+    /*project titles appear on hover near cursor*/
+    #title-36days {
+        position: absolute;
+        border: 1px solid var(--menu-text-color);
+        z-index: var(--send-to-front);
+        display: none;
+        
+        background-color: var(--white);
+        
+        transition: all 2s;
+    }
+    
+        #title-36days p {
+            font-family: 'Anonymous Pro', monospace;
+            font-size: 14px;
+            padding: -20px 20px -20px 20px;
+        }
+    
+    /*for grid-item black border*/
+
+    #masonry-36days img:hover,
+    #masonry-ApolloIllustrations img:hover,
+    #masonry-ObliqueStrategies img:hover,
+    #masonry-dialpadSecurity img:hover, 
+    #masonry-DidTheRightThing img:hover,
+    #masonry-FloodKit img:hover,
+    #masonry-DialpadHighFive img:hover,
+    #masonry-Dialpad90s img:hover,
+    #masonry-supersecretbanana img:hover,
+    #masonry-IconIllustrations img:hover{
         box-sizing: border-box;
         width: 280px;
         height: 280px;
@@ -414,6 +475,15 @@ img {
         border-color: black;
         transition: border-color .5s;
     }
+    
+    /*for grid-item white border*/
+    
+    
+    /*for grid-item--height2 black border*/
+    /*for grid-item--height2 white border*/
+    
+    /*for grid-item--width2 black border*/
+    /*for grid-item--width2 white border*/
     
         
 
