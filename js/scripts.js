@@ -39,6 +39,25 @@ $(document).mousemove(function(e){
 
 //Reveal Project Title on Hover
 
+var masonryTitle=$("#title-36days, #title-ApolloIllustrations");
+
+    masonryTitle.hide();
+
+$("#masonry-36days").hover(function() {
+    $("#title-36days").show();
+}, function() {
+    $("#title-36days").hide();   
+});
+
+$("#masonry-ApolloIllustrations").hover(function() {
+    $("#title-ApolloIllustrations").show();
+}, function() {
+    $("#title-ApolloIllustrations").hide();   
+});
+
+
+
+//TO DO: fix this click
 $("#twitter").hover(function(event) {
     $("#click-guide").css({top: event.clientY-20, left: event.clientX}).show();
 }, function() {
