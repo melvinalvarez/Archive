@@ -40,7 +40,7 @@
     --four-column: 280px;
     
 /*Mobile Menu*/
-    --mobile-menu-height: 80px;
+    --mobile-menu-height: 70px;
     
 /*Z-Layers*/
     --send-to-front: 20;
@@ -147,6 +147,7 @@ button {
     width: 100%;
     height: var(--mobile-menu-height);
     background-color: var(--white);
+    border-bottom: 1px solid var(--menu-text-color);
     position: fixed;
     margin: -8px;
     display: flex;
@@ -428,7 +429,18 @@ img {
 
 /*Masonry + Grid*/
 
+    #masonry-aboutSnippet {
+        width: 280px;
+        height: 100px;
+        display: none;
+    }
 
+        #masonry-aboutSnippet p {
+            font-family: 'Catamaran';
+            text-align: right;
+            font-size: 0.72em;
+            line-height: 1.3em;
+        }
 
     .grid-item {
         width: 280px;
@@ -459,7 +471,12 @@ img {
 
 /*Hover Interactions*/
 
-    /*project titles appear on hover near cursor*/
+/*for mobile*/
+    .m-title {
+        display: none;
+    }
+
+/*project titles appear on hover near cursor*/
     #title-36days,
     #title-ApolloIllustrations,
     #title-ObliqueStrategies,

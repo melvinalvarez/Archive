@@ -11,16 +11,40 @@
       display: block;
     }
     
-    .grid {
-        margin: auto;
-        max-width: 570px;
+        #mobile-menu {
+            position: absolute;
+            display: inline-block;
+        }
+    
+        #masonry-aboutSnippet {
+            display: inline-block;
+            position: relative;
+            right: 20px;
+            width: 100%;
+        }
+        
+        .grid-item {
+            margin: 0 auto;
+        }
+    
+        .grid-item--width2,
+        .container-wide {
+            height: 138px;
+            width: 280px;
+        }
+    
+    .content-container {
+        position: relative;
+        top: 100px;
+        max-width: 280px;
+        border-right: 0;
+        margin: 0 auto;
     }
     
-    .grid-item--width2,
-    .container-wide {
-        height: 138px;
-        width: 280px;
-    }
+        #masonry {
+            position: relative;
+            margin: 0 auto;
+        }   
     
     #col-container {
         border: 0;
@@ -39,10 +63,68 @@
         .content-container {
             border-left: 0px;
         }
+
+/*Reveal Titles on top of work*/
+
+
+/*for mobile*/
+    .m-title {
+        display: inline;
+        position: absolute;
+        z-index: var(--send-to-front);
+        transition: all 2s;
+        top: -36px;
+    }
     
+        .m-title p {
+            font-family: 'Anonymous Pro', monospace;
+            font-size: 12px;
+            color: white;
+            background-color: black;
+            padding: 0 10px;
+        }
+
+/*for screen*/
+
+    #title-36days,
+    #title-ApolloIllustrations,
+    #title-ObliqueStrategies,
+    #title-Nolfam,
+    #title-DialpadSecurity,
+    #title-ScottPilgrim,
+    #title-DidTheRightThing,
+    #title-Floodkit,
+    #title-DialpadHighFive,
+    #title-DoTheRightThing,
+    #title-Flotus,
+    #title-Dialpad90s,
+    #title-DarkRoom,
+    #title-SuperSecretBanana,
+    #title-IconIllustrations,
+    #title-SANFRAN,
+    #title-100DayProject,
+    #title-DialpadIllustrations,
+    #title-FluidAlphabet,
+    #title-RacSpotting,
+    #title-RaulPlancarte,
+    #title-Warcycle {
+        display: block;
+        top: 10px;
+    }
+    
+/*Grid item spacing adjustments*/
+
+.grid-item,
+.grid-item--width2,
+.grid-item--height2 {
+    margin-top: 60px;
+}
+
+/**/
     
     #sidebar {
         display: none;
+        width: 0;
     }
 }
 
