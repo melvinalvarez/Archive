@@ -13,13 +13,44 @@
     
         #mobile-menu {
             position: absolute;
+            left: 10px;
+            top: 16px;
             display: inline-block;
         }
+        
+            #mobile-menu .mobile-menu-number {
+                font-family: 'Anonymous Pro', monospace;
+                font-size: 0.8em;
+                color: var(--menu-text-color);
+                position: relative;
+                top: -14px;
+            }
+            
+                #mobile-menu-number-two,
+                #mobile-menu-about,
+                #mobile-menu-number-three,
+                #mobile-menu-process,
+                #mobile-menu-number-four,
+                #mobile-menu-resources,
+                #mobile-menu-number-five,
+                #mobile-menu-shop{
+                    display: none;
+                }
+            
+            #mobile-menu a {
+                font-family: 'Catamaran', sans-serif;
+                font-size: 1.5em;
+                color: var(--menu-text-color);
+                position: relative;
+                left: -2px;
+            }
+            
+            
     
         #masonry-aboutSnippet {
             display: inline-block;
             position: relative;
-            right: 20px;
+            right: 10px;
             width: 100%;
         }
         
