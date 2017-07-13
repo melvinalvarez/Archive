@@ -36,6 +36,10 @@
         width: var(--four-column);
     }
     
+        .content-container {
+            border-left: 0px;
+        }
+    
     
     #sidebar {
         display: none;

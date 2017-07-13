@@ -39,7 +39,7 @@ $(document).mousemove(function(e){
 
 //Reveal Project Title on Hover
 
-var masonryTitle=$("#title-36days, #title-ApolloIllustrations");
+var masonryTitle=$("#title-36days, #title-ApolloIllustrations, #title-ObliqueStrategies, #title-Nolfam, #title-DialpadSecurity, #title-ScottPilgrim, #title-DidTheRightThing, #title-Floodkit, #title-DialpadHighFive, #title-DoTheRightThing, #title-Flotus, #title-Dialpad90s, #title-DarkRoom, #title-SuperSecretBanana, #title-IconIllustrations, #title-SANFRAN, #title-100DayProject, #title-DialpadIllustrations, #title-FluidAlphabet, #title-RacSpotting, #title-RaulPlancarte, #title-Warcycle");
 
     masonryTitle.hide();
 
@@ -55,11 +55,129 @@ $("#masonry-ApolloIllustrations").hover(function() {
     $("#title-ApolloIllustrations").hide();   
 });
 
+$("#masonry-ObliqueStrategies").hover(function() {
+    $("#title-ObliqueStrategies").show();
+}, function() {
+    $("#title-ObliqueStrategies").hide();   
+});
 
+$("#masonry-Nolfam").hover(function() {
+    $("#title-Nolfam").show();
+}, function() {
+    $("#title-Nolfam").hide();   
+});
+
+$("#masonry-dialpadSecurity").hover(function() {
+    $("#title-DialpadSecurity").show();
+}, function() {
+    $("#title-DialpadSecurity").hide();   
+});
+
+$("#masonry-ScottPilgrim").hover(function() {
+    $("#title-ScottPilgrim").show();
+}, function() {
+    $("#title-ScottPilgrim").hide();   
+});
+
+$("#masonry-DidTheRightThing").hover(function() {
+    $("#title-DidTheRightThing").show();
+}, function() {
+    $("#title-DidTheRightThing").hide();   
+});
+
+$("#masonry-FloodKit").hover(function() {
+    $("#title-Floodkit").show();
+}, function() {
+    $("#title-Floodkit").hide();   
+});
+
+$("#masonry-DialpadHighFive").hover(function() {
+    $("#title-DialpadHighFive").show();
+}, function() {
+    $("#title-DialpadHighFive").hide();   
+});
+
+$("#masonry-DoTheRightThing").hover(function() {
+    $("#title-DoTheRightThing").show();
+}, function() {
+    $("#title-DoTheRightThing").hide();   
+});
+
+$("#masonry-Flotus").hover(function() {
+    $("#title-Flotus").show();
+}, function() {
+    $("#title-Flotus").hide();   
+});
+
+$("#masonry-Dialpad90s").hover(function() {
+    $("#title-Dialpad90s").show();
+}, function() {
+    $("#title-Dialpad90s").hide();   
+});
+
+$("#masonry-DarkRoom").hover(function() {
+    $("#title-DarkRoom").show();
+}, function() {
+    $("#title-DarkRoom").hide();   
+});
+
+$("#masonry-SuperSecretBanana").hover(function() {
+    $("#title-SuperSecretBanana").show();
+}, function() {
+    $("#title-SuperSecretBanana").hide();   
+});
+
+$("#masonry-IconIllustrations").hover(function() {
+    $("#title-IconIllustrations").show();
+}, function() {
+    $("#title-IconIllustrations").hide();   
+});
+
+$("#masonry-SANFRAN").hover(function() {
+    $("#title-SANFRAN").show();
+}, function() {
+    $("#title-SANFRAN").hide();   
+});
+
+$("#masonry-100DayProject").hover(function() {
+    $("#title-100DayProject").show();
+}, function() {
+    $("#title-100DayProject").hide();   
+});
+
+$("#masonry-DialpadIllustrations").hover(function() {
+    $("#title-DialpadIllustrations").show();
+}, function() {
+    $("#title-DialpadIllustrations").hide();   
+});
+
+$("#masonry-FluidAlphabet").hover(function() {
+    $("#title-FluidAlphabet").show();
+}, function() {
+    $("#title-FluidAlphabet").hide();   
+});
+
+$("#masonry-RacSpotting").hover(function() {
+    $("#title-RacSpotting").show();
+}, function() {
+    $("#title-RacSpotting").hide();   
+});
+
+$("#masonry-RaulPlancarte").hover(function() {
+    $("#title-RaulPlancarte").show();
+}, function() {
+    $("#title-RaulPlancarte").hide();   
+});
+
+$("#masonry-Warcycle").hover(function() {
+    $("#title-Warcycle").show();
+}, function() {
+    $("#title-Warcycle").hide();   
+});
 
 //TO DO: fix this click
 $("#twitter").hover(function(event) {
-    $("#click-guide").css({top: event.clientY-20, left: event.clientX}).show();
+    $("#click-guide").css({top: event.clientY-50, left: event.clientX}).show();
 }, function() {
     $("#click-guide").hide();
 });
@@ -122,7 +240,7 @@ var myColors = [
         ];
 var i = 0;
 
-$("#masonry-36days, #masonry-ApolloIllustrations, #masonry-ObliqueStrategies, #masonry-Nolfam, #masonry-dialpadSecurity, #masonry-ScottPilgrim, #masonry-DidTheRightThing, #masonry-FloodKit, #masonry-DialpadHighFive, #masonry-DoTheRightThing, #masonry-Flotus, #masonry-Dialpad90s, #masonry-darkroom, #masonry-supersecretbanana, #masonry-illustrations, #masonry-SANFRAN, #masonry-100DayProject, #masonry-DialpadIllustrations, #masonry-FluidAlphabet, #masonry-RacSpotting, #masonry-DoTheRightThing, #masonry-Warcycle ").hover(
+$("#masonry-36days, #masonry-ApolloIllustrations, #masonry-ObliqueStrategies, #masonry-Nolfam, #masonry-dialpadSecurity, #masonry-ScottPilgrim, #masonry-DidTheRightThing, #masonry-FloodKit, #masonry-DialpadHighFive, #masonry-DoTheRightThing, #masonry-Flotus, #masonry-Dialpad90s, #masonry-DarkRoom, #masonry-SuperSecretBanana, #masonry-DialpadIllustrations, #masonry-SANFRAN, #masonry-100DayProject, #masonry-DialpadIllustrations, #masonry-FluidAlphabet, #masonry-RacSpotting, #masonry-RaulPlancarte, #masonry-Warcycle ").hover(
     function() {
         $('.yellow-trail').css('background-color', myColors[i]);//yellow
         i = (i + 1) % myColors.length;
