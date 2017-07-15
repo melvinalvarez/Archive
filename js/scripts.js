@@ -253,5 +253,28 @@ $("#masonry-36days, #masonry-ApolloIllustrations, #masonry-ObliqueStrategies, #m
 //Quote Generator
 
 
+//Mobile Menu Interactions
+
+$("#menu-container").click(function() {
+    if ( $(this).height() != 68)
+          $( this ).animate({ height: 68 }, 100 ),
+          $("#mobile-menu-expand").css("display", "none"),
+          $("#aboutSnippet-expand").css("display", "none");
+    else
+          $( this ).animate({ height: 240 }, 200 ),
+          $("#mobile-menu-expand").css("display", "block"),
+          $("#aboutSnippet-expand").css("display", "block");
+});
+
+// Element on screen visibility
+
+//function isScrolledIntoView(el) {
+//    var elemTop = el.getBoundingClientRect().top;
+//    var elemBottom = el.getBoundingClientRect().bottom;
+
+//   var isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
+//    return isVisible;
+//}
+
 //WebVR AFrame voice-control 
 //listen to iOS Update on WebkitSpeech

@@ -26,14 +26,8 @@
                 top: -14px;
             }
             
-                #mobile-menu-number-two,
-                #mobile-menu-about,
-                #mobile-menu-number-three,
-                #mobile-menu-process,
-                #mobile-menu-number-four,
-                #mobile-menu-resources,
-                #mobile-menu-number-five,
-                #mobile-menu-shop{
+                #mobile-menu-expand,
+                #aboutSnippet-expand{
                     display: none;
                 }
             
@@ -45,14 +39,27 @@
                 left: -2px;
             }
             
+                .mobile-menu-arrow {
+                    font-size: 0.8em;
+                }
+            
             
     
-        #masonry-aboutSnippet {
+        #masonry-aboutSnippet,
+        .aboutSnippet-links {
             display: inline-block;
             position: relative;
             right: 10px;
             width: 100%;
         }
+            
+            .aboutSnippet-line {
+                position: relative;
+                right: -250px;
+                height: 1px;
+                width: 120px;
+                background-color: var(--menu-text-color);
+            }
         
         .grid-item {
             margin: 0 auto;
