@@ -182,6 +182,13 @@ button {
         .menu-social a:hover {
             color: blue;
         }
+        
+    /*Mobile containers*/
+    
+        #mobile-menu-about {
+            position: relative;
+            z-index: var(--bring-to-front);
+        }
 
         
 /*grid system for non-index content

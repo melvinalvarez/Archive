@@ -257,14 +257,16 @@ $("#masonry-36days, #masonry-ApolloIllustrations, #masonry-ObliqueStrategies, #m
 
 $("#menu-container").click(function() {
     if ( $(this).height() != 68)
-          $( this ).animate({ height: 68 }, 100 ),
-          $("#mobile-menu-expand").css("display", "none"),
-          $("#aboutSnippet-expand").css("display", "none");
+        $( this ).animate({ height: 68 }, 100 ),
+        $("#mobile-menu-expand").css("display", "none"),
+        $("#aboutSnippet-expand").css("display", "none");
     else
-          $( this ).animate({ height: 240 }, 200 ),
-          $("#mobile-menu-expand").css("display", "block"),
-          $("#aboutSnippet-expand").css("display", "block");
+        $( this ).animate({ height: 240 }, 200 ),
+        $("#mobile-menu-expand").css("display", "block"),
+        $("#aboutSnippet-expand").css("display", "block");
 });
+
+
 
 // Element on screen visibility
 
