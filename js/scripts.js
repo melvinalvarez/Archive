@@ -266,6 +266,10 @@ $("#menu-container").click(function() {
         $("#aboutSnippet-expand").css("display", "block");
 });
 
+$("#mobile-menu-about").click(function() {
+    $(this).toggleClass("highlight");
+});
+
 
 
 // Element on screen visibility

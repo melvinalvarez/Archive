@@ -32,6 +32,10 @@
                     position: relative;
                     z-index: var(--bring-to-front);
                 }
+                
+                    .highlight {
+                        background: yellow;
+                    }
             
             #mobile-menu a {
                 font-family: 'Catamaran', sans-serif;
@@ -79,6 +83,7 @@
         max-width: 280px;
         border-right: 0;
         margin: 0 auto;
+        z-index: var(--send-to-back);
     }
     
         #masonry {
