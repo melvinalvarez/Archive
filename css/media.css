@@ -86,6 +86,12 @@
         z-index: var(--send-to-back);
     }
     
+    .screen-overlay {
+        background-color: var(--menu-text-color);
+        opacity: 0.7;
+        z-index: var(--send-to-middle);
+    }
+    
         #masonry {
             position: relative;
             margin: 0 auto;
