@@ -256,6 +256,10 @@ $("#masonry-36days, #masonry-ApolloIllustrations, #masonry-ObliqueStrategies, #m
 //Mobile Menu Interactions
 
 $("#menu-container").click(function() {
+    event.stopImmediatePropagation();
+});
+
+$("#menu-container").click(function() {
     if ( $(this).height() != 68)
         $( this ).animate({ height: 68 }, 100 ),
         $("#mobile-menu-expand").css("display", "none"),
