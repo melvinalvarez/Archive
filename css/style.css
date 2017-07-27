@@ -341,8 +341,8 @@ button {
     
     
         .menu-line a:hover {
-            color: blue;
-            transition: color 1s;
+            color: white;
+            transition: color 0.1s;
         }
     
         .menu-line .box {
@@ -375,6 +375,7 @@ button {
                 padding-left: 20px;
                 padding-right: 60px;
                 left: -20px;
+                background-color: black;
             }
         
             

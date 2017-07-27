@@ -256,10 +256,9 @@ $("#masonry-36days, #masonry-ApolloIllustrations, #masonry-ObliqueStrategies, #m
 //Mobile Menu Interactions
 
 $("#menu-container").click(function() {
-    event.stopImmediatePropagation();
-});
+    
+//var workLinks = $("#masonry-36days");
 
-$("#menu-container").click(function() {
     if ( $(this).height() != 68)
         $( this ).animate({ height: 68 }, 100 ),
         $("#mobile-menu-expand").css("display", "none"),
@@ -268,6 +267,11 @@ $("#menu-container").click(function() {
         $( this ).animate({ height: 240 }, 200 ),
         $("#mobile-menu-expand").css("display", "block"),
         $("#aboutSnippet-expand").css("display", "block");
+});
+
+//disable work-links when menu is expanded
+$("#menu-container > a").click(function() {
+  event.stopImmediatePropagation(); 
 });
 
 $("#mobile-menu-about").click(function() {

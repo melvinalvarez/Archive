@@ -171,6 +171,25 @@
     margin-top: 60px;
 }
 
+/*disable clicking on works*/
+
+    #masonry-36days a,
+    #masonry-ApolloIllustrations a,
+    #masonry-ObliqueStrategies a,
+    #masonry-dialpadSecurity a, 
+    #masonry-DidTheRightThing a,
+    #masonry-FloodKit a,
+    #masonry-DialpadHighFive a,
+    #masonry-Dialpad90s a,
+    #masonry-SuperSecretBanana a,
+    #masonry-IconIllustrations a,
+    #masonry-SANFRAN a,
+    #masonry-DialpadIllustrations a,
+    #masonry-FluidAlphabet a,
+    #masonry-RacSpotting a{
+        pointer-events: none;
+    }
+
 /**/
     
     #sidebar {
