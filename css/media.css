@@ -28,8 +28,9 @@
             
                 #mobile-menu-expand,
                 #aboutSnippet-expand{
-                    display: none;
-                    position: relative;
+                    height: 0px;
+                    overflow: hidden;
+                    transition: height 0.2s;
                     z-index: var(--bring-to-front);
                 }
                 
@@ -48,6 +49,11 @@
                 .mobile-menu-arrow {
                     font-size: 0.8em;
                 }
+                
+            #toggle:checked ~ #mobile-menu-expand,
+            #toggle:checked ~ #aboutSnippet-expand{
+                height: 200px;
+            }
             
             
     

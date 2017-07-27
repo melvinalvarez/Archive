@@ -254,20 +254,20 @@ $("#masonry-36days, #masonry-ApolloIllustrations, #masonry-ObliqueStrategies, #m
 
 
 //Mobile Menu Interactions
-
-$("#menu-container").click(function() {
+// fixed with pure css
+//$("#menu-container").click(function() {
     
-//var workLinks = $("#masonry-36days");
+//    if ( $(this).height() != 68)
+//        $( this ).animate({ height: 68 }, 100 ),
+//        $("#mobile-menu-expand").css("display", "none"),
+//        $("#aboutSnippet-expand").css("display", "none");
+//    else
+//        $( this ).animate({ height: 240 }, 200 ),
+//        $("#mobile-menu-expand").css("display", "block"),
+//        $("#aboutSnippet-expand").css("display", "block");
+        
+//});
 
-    if ( $(this).height() != 68)
-        $( this ).animate({ height: 68 }, 100 ),
-        $("#mobile-menu-expand").css("display", "none"),
-        $("#aboutSnippet-expand").css("display", "none");
-    else
-        $( this ).animate({ height: 240 }, 200 ),
-        $("#mobile-menu-expand").css("display", "block"),
-        $("#aboutSnippet-expand").css("display", "block");
-});
 
 //disable work-links when menu is expanded
 $("#menu-container > a").click(function() {
