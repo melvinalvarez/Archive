@@ -9,14 +9,31 @@
     
     #menu-container {
       display: block;
+      border-bottom: none;
+      
     }
     
         #mobile-menu {
-            position: absolute;
-            left: 10px;
-            top: 16px;
-            display: inline-block;
+            height: 60px;
+            width: 100%;
+            background-color: white;
+            border-bottom: 1px solid black;
         }
+        
+            #mobile-menu-icon {
+                position: relative;
+                padding: 4px;
+            }
+            
+                .mobile-menu-line {
+                    display: block;
+                    width: 19px;
+                    height: 3px;
+                    margin: 4px 10px;
+                    z-index: var(--send-to-front);
+                    border-radius: 2px;
+                    background-color: black;
+                }
         
             #mobile-menu .mobile-menu-number {
                 font-family: 'Anonymous Pro', monospace;
@@ -26,18 +43,22 @@
                 top: -14px;
             }
             
-                #mobile-menu-expand,
-                #aboutSnippet-expand{
+                #mobile-menu-expand{
+                    position: relative;
+                    top: 40px;
                     height: 0px;
                     overflow: hidden;
                     transition: height 0.2s;
-                    z-index: var(--bring-to-front);
+                    background-color: white;
+                    
                 }
                 
-                    .highlight {
-                        background: yellow;
-                    }
+            #mobile-menu-works {
+                position: relative;
+                padding: 10px;
+            }    
             
+            #mobile-menu-works,    
             #mobile-menu a {
                 font-family: 'Catamaran', sans-serif;
                 font-size: 1.5em;
@@ -49,10 +70,15 @@
                 .mobile-menu-arrow {
                     font-size: 0.8em;
                 }
+            
+            input[type=checkbox]{
+                display: none;
+            }    
                 
             #toggle:checked ~ #mobile-menu-expand,
             #toggle:checked ~ #aboutSnippet-expand{
-                height: 200px;
+                height: 300px;
+                border-bottom: 1px solid black;
             }
             
             

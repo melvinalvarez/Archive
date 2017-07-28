@@ -274,12 +274,6 @@ $("#menu-container > a").click(function() {
   event.stopImmediatePropagation(); 
 });
 
-$("#mobile-menu-about").click(function() {
-    $(this).toggleClass("highlight");
-});
-
-
-
 // Element on screen visibility
 
 //function isScrolledIntoView(el) {
