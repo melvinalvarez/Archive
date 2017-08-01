@@ -80,16 +80,18 @@
                 border-bottom: 1px solid black;
             }
             
-            
+           
+        
     
         #masonry-aboutSnippet,
         .aboutSnippet-links {
             display: inline-block;
             position: relative;
             right: 10px;
+            top: -260px;
             width: 100%;
         }
-            
+    
             .aboutSnippet-line {
                 position: relative;
                 right: -250px;
