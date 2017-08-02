@@ -41,6 +41,7 @@
                 color: var(--menu-text-color);
                 position: relative;
                 top: -14px;
+                left: 10px;
             }
             
                 #mobile-menu-expand{
@@ -52,9 +53,14 @@
                     
                 }
                 
-            #mobile-menu-works {
+            #mobile-menu-works,
+            #mobile-menu-about,
+            #mobile-menu-process,
+            #mobile-menu-resources,
+            #mobile-menu-shop {
                 position: relative;
                 padding: 10px;
+                left: 10px;
             }    
             
             #mobile-menu-works,    
@@ -87,16 +93,16 @@
         .aboutSnippet-links {
             display: inline-block;
             position: relative;
-            right: 10px;
-            top: -260px;
+            right: 60px;
+            top: -136px;
             width: 100%;
         }
     
             .aboutSnippet-line {
                 position: relative;
-                right: -250px;
+                right: -170px;
                 height: 1px;
-                width: 120px;
+                width: 200px;
                 background-color: var(--menu-text-color);
             }
         
