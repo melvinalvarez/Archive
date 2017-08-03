@@ -72,6 +72,15 @@
                 left: -2px;
             }
             
+            .menu-current {
+                height: 34px;
+                width: 160px;
+                background-color: black;
+                display: inline-block;
+                position: absolute;
+                left: -10px;
+            }
+            
                 .mobile-menu-arrow {
                     font-size: 0.8em;
                 }
