@@ -9,7 +9,7 @@
     
     #menu-container {
       display: block;
-      border-bottom: none;
+      border-bottom: 1px solid black;
       
     }
     
@@ -17,12 +17,12 @@
             height: 60px;
             width: 100%;
             background-color: white;
-            border-bottom: 1px solid black;
         }
         
             #mobile-menu-icon {
                 position: relative;
                 padding: 4px;
+                left: 10px;
             }
             
                 .mobile-menu-line {
@@ -50,8 +50,14 @@
                     overflow: hidden;
                     transition: height 0.2s;
                     background-color: white;
-                    
                 }
+                
+                #mobile-menu-expanded-menu {
+                    position: relative;
+                    left: 30px;
+                    top: 20px;
+                }
+                
                 
             #mobile-menu-works,
             #mobile-menu-about,
@@ -59,7 +65,7 @@
             #mobile-menu-resources,
             #mobile-menu-shop {
                 position: relative;
-                padding: 10px;
+                padding: 10px 12px 10px 14px;
                 left: 10px;
             }    
             
@@ -73,11 +79,13 @@
             }
             
             .menu-current {
-                height: 20px;
+                height: 36px;
                 width: 200px;
-                background-color: black;
+                background-color: transparent;
+                border: 1px solid var(--black);
                 display: inline-block;
                 position: absolute;
+                left: 6px;
             }
             
                 .mobile-menu-arrow {
@@ -94,6 +102,24 @@
                 border-bottom: 1px solid black;
             }
             
+            #toggle:checked ~ #mobile-menu-icon {
+                transition: all 200ms ease-in-out;
+            }
+            
+                #toggle:checked ~ #mobile-menu-icon .mobile-menu-line:nth-of-type(2) {
+                    background-color: transparent;
+                }
+                
+                #toggle:checked ~ #mobile-menu-icon .mobile-menu-line:nth-of-type(1) {
+                    top: 2px;
+                    position: absolute;
+                    transform: rotate(45deg);
+                }
+                
+                #toggle:checked ~ #mobile-menu-icon .mobile-menu-line:nth-of-type(3) {
+                    transform: rotate(-45deg);
+                }
+                
            
         
     

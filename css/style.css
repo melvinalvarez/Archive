@@ -301,6 +301,10 @@ button {
         position: relative;
         top: 14px;
     }
+    
+        .header-box {
+            width: 70px;
+        }
 
     ul#header-info,
     h1#header-info{
@@ -341,7 +345,6 @@ button {
     
     
         .menu-line a:hover {
-            color: white;
             transition: color 0.1s;
         }
     
@@ -362,6 +365,7 @@ button {
                 display: inline-block;
                 position: relative;
                 transition: all .5s;
+                width: 100px;
             }
             
             #menu-line-works:hover,
@@ -375,7 +379,8 @@ button {
                 padding-left: 20px;
                 padding-right: 60px;
                 left: -20px;
-                background-color: black;
+                background-color: transparent;
+
             }
         
             
