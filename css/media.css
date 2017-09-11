@@ -7,6 +7,14 @@
         display: none;
     }
     
+    #masonry {
+        display: none;
+    }
+    
+    #flickity {
+        display: block;
+    }
+    
     #menu-container {
       display: block;
       border-bottom: 1px solid black;
@@ -263,6 +271,20 @@
     #masonry-RacSpotting a{
         pointer-events: none;
     }
+
+/**/
+
+
+/*Carousel Styles*/
+
+.carousel {
+  background: #EEE;
+}
+
+.carousel-cell {
+  width: 100%;
+}
+
 
 /**/
     

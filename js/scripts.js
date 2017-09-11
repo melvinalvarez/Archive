@@ -37,6 +37,77 @@ $(document).mousemove(function(e){
     
 });
 
+//Experimental Cursor
+
+$("#experimentalCursor").click(function() {
+
+    (function($) {
+    
+        var baseCssClass = "cursor-trail",
+            addPoint = function(pageX, pageY, cssClass, timeToGrow, timeToShrink, scale) {
+                // Create a new point located at the mouse position
+                var point = $("<div>", {
+                    "class": cssClass,
+                    css: {
+                        left: pageX,
+                        top: pageY
+                    }
+                }).appendTo('body');
+    
+                // now make the point grow, then shrink and finally disappear
+                point
+                    .transition({ scale: scale }, timeToGrow)
+                    .transition({ scale: 1 }, timeToShrink, function() { point.remove(); });
+            };
+    
+        $.fn.cursorTrail = function(options) {
+            // assign defaul2s for those options not supplied
+            options = $.extend({
+                timeToGrow: 100,
+                timeToShrink: 200,
+                scale: 4,
+                "class": ""
+            }, options);
+    
+            // add the base css class all cursor trail points need.
+            var actualCssClass = baseCssClass;
+            if (options["class"]) {
+                actualCssClass += " " + options["class"];
+            }
+    
+            return this.bind("mousemove", function(ev) {
+                addPoint(ev.pageX, ev.pageY, actualCssClass, options.timeToGrow, options.timeToShrink, options.scale);
+            });
+        };
+    }(jQuery));
+    
+    // jQuery.transit has a bug in older IE versions, so switch to jQuery animate
+    if (!$.support.transition) {
+        $.fn.transition = $.fn.animate;
+    }
+    
+    $("#container").cursorTrail({
+        "class": "yellow-trail"
+    });
+    
+    //Image Hover, Cursor trail Color changes
+    
+    var myColors = [
+                '#FFD600', '#F416EB', '#07AF00' ,'#0085CF', '#FD4A4A', '#696969'
+            ];
+    var i = 0;
+    
+    $("#masonry-36days, #masonry-ApolloIllustrations, #masonry-ObliqueStrategies, #masonry-Nolfam, #masonry-dialpadSecurity, #masonry-ScottPilgrim, #masonry-DidTheRightThing, #masonry-FloodKit, #masonry-DialpadHighFive, #masonry-DoTheRightThing, #masonry-Flotus, #masonry-Dialpad90s, #masonry-DarkRoom, #masonry-SuperSecretBanana, #masonry-DialpadIllustrations, #masonry-SANFRAN, #masonry-100DayProject, #masonry-DialpadIllustrations, #masonry-FluidAlphabet, #masonry-RacSpotting, #masonry-RaulPlancarte, #masonry-Warcycle ").hover(
+        function() {
+            $('.yellow-trail').css('background-color', myColors[i]);//yellow
+            i = (i + 1) % myColors.length;
+        }
+    ); 
+    });
+    
+    
+
+
 //Reveal Project Title on Hover
 
 var masonryTitle=$("#title-36days, #title-ApolloIllustrations, #title-ObliqueStrategies, #title-Nolfam, #title-DialpadSecurity, #title-ScottPilgrim, #title-DidTheRightThing, #title-Floodkit, #title-DialpadHighFive, #title-DoTheRightThing, #title-Flotus, #title-Dialpad90s, #title-DarkRoom, #title-SuperSecretBanana, #title-IconIllustrations, #title-SANFRAN, #title-100DayProject, #title-DialpadIllustrations, #title-FluidAlphabet, #title-RacSpotting, #title-RaulPlancarte, #title-Warcycle");
@@ -175,77 +246,16 @@ $("#masonry-Warcycle").hover(function() {
     $("#title-Warcycle").hide();   
 });
 
-//TO DO: fix this click
+// Hover alert for changing to experimental cursor instead of link
 $("#twitter").hover(function(event) {
     $("#click-guide").css({top: event.clientY-50, left: event.clientX}).show();
 }, function() {
     $("#click-guide").hide();
 });
 
-// Cursor Trail
+//Experimental Cursor
 
-(function($) {
 
-    var baseCssClass = "cursor-trail",
-        addPoint = function(pageX, pageY, cssClass, timeToGrow, timeToShrink, scale) {
-            // Create a new point located at the mouse position
-            var point = $("<div>", {
-                "class": cssClass,
-                css: {
-                    left: pageX,
-                    top: pageY
-                }
-            }).appendTo('body');
-
-            // now make the point grow, then shrink and finally disappear
-            point
-                .transition({ scale: scale }, timeToGrow)
-                .transition({ scale: 1 }, timeToShrink, function() { point.remove(); });
-        };
-
-    $.fn.cursorTrail = function(options) {
-        // assign defaul2s for those options not supplied
-        options = $.extend({
-            timeToGrow: 100,
-            timeToShrink: 200,
-            scale: 4,
-            "class": ""
-        }, options);
-
-        // add the base css class all cursor trail points need.
-        var actualCssClass = baseCssClass;
-        if (options["class"]) {
-            actualCssClass += " " + options["class"];
-        }
-
-        return this.bind("mousemove", function(ev) {
-            addPoint(ev.pageX, ev.pageY, actualCssClass, options.timeToGrow, options.timeToShrink, options.scale);
-        });
-    };
-}(jQuery));
-
-// jQuery.transit has a bug in older IE versions, so switch to jQuery animate
-if (!$.support.transition) {
-    $.fn.transition = $.fn.animate;
-}
-
-$("#container").cursorTrail({
-    "class": "yellow-trail"
-});
-
-//Image Hover, Cursor trail Color changes
-
-var myColors = [
-            '#FFD600', '#F416EB', '#07AF00' ,'#0085CF', '#FD4A4A', '#696969'
-        ];
-var i = 0;
-
-$("#masonry-36days, #masonry-ApolloIllustrations, #masonry-ObliqueStrategies, #masonry-Nolfam, #masonry-dialpadSecurity, #masonry-ScottPilgrim, #masonry-DidTheRightThing, #masonry-FloodKit, #masonry-DialpadHighFive, #masonry-DoTheRightThing, #masonry-Flotus, #masonry-Dialpad90s, #masonry-DarkRoom, #masonry-SuperSecretBanana, #masonry-DialpadIllustrations, #masonry-SANFRAN, #masonry-100DayProject, #masonry-DialpadIllustrations, #masonry-FluidAlphabet, #masonry-RacSpotting, #masonry-RaulPlancarte, #masonry-Warcycle ").hover(
-    function() {
-        $('.yellow-trail').css('background-color', myColors[i]);//yellow
-        i = (i + 1) % myColors.length;
-    }
-);
 
 
 //SIDEBAR
