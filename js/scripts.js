@@ -106,6 +106,8 @@ $("#experimentalCursor").click(function() {
     });
     
     
+//Flickity Events
+    
 
 
 //Reveal Project Title on Hover

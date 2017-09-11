@@ -47,8 +47,8 @@ http://flickity.metafizzy.co
 .flickity-prev-next-button {
   position: absolute;
   top: 50%;
-  width: 44px;
-  height: 44px;
+  width: 26px;
+  height: 26px;
   border: none;
   border-radius: 50%;
   background: white;
@@ -70,8 +70,8 @@ http://flickity.metafizzy.co
   opacity: 0.6;
 }
 
-.flickity-prev-next-button.previous { left: -46px; }
-.flickity-prev-next-button.next { right: -46px; }
+.flickity-prev-next-button.previous { left: -32px; }
+.flickity-prev-next-button.next { right: -32px; }
 /* right to left */
 .flickity-rtl .flickity-prev-next-button.previous {
   left: auto;
@@ -104,7 +104,7 @@ http://flickity.metafizzy.co
 .flickity-page-dots {
   position: absolute;
   width: 100%;
-  bottom: -25px;
+  bottom: -18px;
   padding: 0;
   margin: 0;
   list-style: none;
