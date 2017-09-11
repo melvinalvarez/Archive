@@ -107,7 +107,19 @@ $("#experimentalCursor").click(function() {
     
     
 //Flickity Events
-    
+var $carousel = $('.carousel').flickity();
+var flkty = $carousel.data('flickity');
+
+$carousel.on( 'settle.flickity', function() {
+  console.log( 'Flickity settled at ' + flkty.selectedIndex );
+  
+  if (flkty.selectedIndex == 0) {
+    $("#FlickityWorkTitle").text('36 Days of Type');
+ }
+
+  
+});
+
 
 
 //Reveal Project Title on Hover

@@ -7,6 +7,12 @@
         display: none;
     }
     
+        p {
+            font-family: var(--body-sub-font);
+            font-size: 14px;
+            line-height: 1.2em;
+        }
+    
     #masonry {
         display: none;
     }
@@ -14,6 +20,11 @@
     #flickity {
         display: block;
     }
+    
+        .flickity-content {
+            margin-top: 30px;
+        }
+        
     
     #menu-container {
       display: block;
@@ -302,32 +313,297 @@ tablets, touch
 */
 @media (min-width: 601px) and (max-width: 900px){
   
-  header,
-  .box {
-      display: none;
-  }
-  
-  #menu-container {
-      display: flex;
-      justify-content: space-between;
-      z-index: var(--send-to-front);
-  }
-  
-  #col-container {
-      border: 0;
-      margin: 0 auto;
-      width: 100%;
-      z-index: var(--middle);
-  }
-  
-  .grid {
-      margin: auto;
-      max-width: 800px;
-  }
-  
-   #sidebar {
-       display: none;
-   }
+   header {
+        display: none;
+    }
+    
+    #masonry {
+        display: none;
+    }
+    
+    #flickity {
+        display: block;
+    }
+    
+    #menu-container {
+      display: block;
+      border-bottom: 1px solid black;
+      
+    }
+    
+        #mobile-menu {
+            height: 60px;
+            width: 100%;
+            background-color: white;
+        }
+        
+            #mobile-menu-icon {
+                position: relative;
+                padding: 4px;
+                left: 14px;
+                top: 6px;
+            }
+            
+                .mobile-menu-line {
+                    display: block;
+                    width: 20px;
+                    height: 2px;
+                    margin: 4px 10px;
+                    z-index: var(--send-to-front);
+                    border-radius: 2px;
+                    background-color: black;
+                }
+        
+            #mobile-menu .mobile-menu-number {
+                font-family: 'Anonymous Pro', monospace;
+                font-size: 0.8em;
+                color: var(--menu-text-color);
+                position: relative;
+                top: -14px;
+                left: 10px;
+            }
+            
+                #mobile-menu-expand{
+                    position: relative;
+                    height: 0px;
+                    overflow: hidden;
+                    transition: height 0.2s;
+                    background-color: white;
+                }
+                
+                #mobile-menu-expanded-menu {
+                    position: relative;
+                    left: 30px;
+                    top: 20px;
+                }
+                
+                
+            #mobile-menu-works,
+            #mobile-menu-about,
+            #mobile-menu-process,
+            #mobile-menu-resources,
+            #mobile-menu-shop {
+                position: relative;
+                padding: 10px 12px 10px 14px;
+                left: 10px;
+            }    
+            
+            #mobile-menu-works,    
+            #mobile-menu a {
+                font-family: 'Catamaran', sans-serif;
+                font-size: 1.5em;
+                color: var(--menu-text-color);
+                position: relative;
+                left: -2px;
+            }
+            
+            .menu-current {
+                height: 36px;
+                width: 200px;
+                background-color: transparent;
+                border: 1px solid var(--black);
+                display: inline-block;
+                position: absolute;
+                left: 6px;
+            }
+            
+                .mobile-menu-arrow {
+                    font-size: 0.8em;
+                }
+            
+            input[type=checkbox]{
+                display: none;
+            }    
+                
+            #toggle:checked ~ #mobile-menu-expand,
+            #toggle:checked ~ #aboutSnippet-expand{
+                height: 300px;
+                border-bottom: 1px solid black;
+            }
+            
+            #toggle:checked ~ #mobile-menu-icon {
+                transition: all 200ms ease-in-out;
+            }
+            
+                #toggle:checked ~ #mobile-menu-icon .mobile-menu-line:nth-of-type(2) {
+                    background-color: transparent;
+                }
+                
+                #toggle:checked ~ #mobile-menu-icon .mobile-menu-line:nth-of-type(1) {
+                    top: 2px;
+                    position: absolute;
+                    transform: rotate(45deg);
+                }
+                
+                #toggle:checked ~ #mobile-menu-icon .mobile-menu-line:nth-of-type(3) {
+                    transform: rotate(-45deg);
+                }
+                
+           
+        
+    
+        #masonry-aboutSnippet,
+        .aboutSnippet-links {
+            display: inline-block;
+            position: relative;
+            right: 60px;
+            top: -136px;
+            width: 100%;
+        }
+    
+            .aboutSnippet-line {
+                position: relative;
+                right: -170px;
+                height: 1px;
+                width: 200px;
+                background-color: var(--menu-text-color);
+            }
+        
+        .grid-item {
+            margin: 0 auto;
+        }
+    
+        .grid-item--width2,
+        .container-wide {
+            height: 138px;
+            width: 280px;
+        }
+    
+    .content-container {
+        position: relative;
+        top: 100px;
+        max-width: 280px;
+        border-right: 0;
+        margin: 0 auto;
+        z-index: var(--send-to-back);
+    }
+    
+    .screen-overlay {
+        background-color: var(--menu-text-color);
+        opacity: 0.7;
+        z-index: var(--send-to-middle);
+    }
+    
+        #masonry {
+            position: relative;
+            margin: 0 auto;
+        }   
+    
+    #col-container {
+        border: 0;
+        margin: 0 auto;
+        width: 100%;
+    }
+    
+        #col-container-header .header-divider {
+        width: 80%;
+    }
+    
+    #content-container {
+        width: var(--four-column);
+    }
+    
+        .content-container {
+            border-left: 0px;
+        }
+
+/*Reveal Titles on top of work*/
+
+
+/*for mobile*/
+    .m-title {
+        display: inline;
+        position: absolute;
+        z-index: var(--send-to-front);
+        transition: all 2s;
+        top: -36px;
+    }
+    
+        .m-title p {
+            font-family: 'Anonymous Pro', monospace;
+            font-size: 12px;
+            color: white;
+            background-color: black;
+            padding: 0 10px;
+        }
+
+/*for screen*/
+
+    #title-36days,
+    #title-ApolloIllustrations,
+    #title-ObliqueStrategies,
+    #title-Nolfam,
+    #title-DialpadSecurity,
+    #title-ScottPilgrim,
+    #title-DidTheRightThing,
+    #title-Floodkit,
+    #title-DialpadHighFive,
+    #title-DoTheRightThing,
+    #title-Flotus,
+    #title-Dialpad90s,
+    #title-DarkRoom,
+    #title-SuperSecretBanana,
+    #title-IconIllustrations,
+    #title-SANFRAN,
+    #title-100DayProject,
+    #title-DialpadIllustrations,
+    #title-FluidAlphabet,
+    #title-RacSpotting,
+    #title-RaulPlancarte,
+    #title-Warcycle {
+        display: block;
+        top: 10px;
+    }
+    
+/*Grid item spacing adjustments*/
+
+.grid-item,
+.grid-item--width2,
+.grid-item--height2 {
+    margin-top: 60px;
+}
+
+/*disable clicking on works*/
+
+    #masonry-36days a,
+    #masonry-ApolloIllustrations a,
+    #masonry-ObliqueStrategies a,
+    #masonry-dialpadSecurity a, 
+    #masonry-DidTheRightThing a,
+    #masonry-FloodKit a,
+    #masonry-DialpadHighFive a,
+    #masonry-Dialpad90s a,
+    #masonry-SuperSecretBanana a,
+    #masonry-IconIllustrations a,
+    #masonry-SANFRAN a,
+    #masonry-DialpadIllustrations a,
+    #masonry-FluidAlphabet a,
+    #masonry-RacSpotting a{
+        pointer-events: none;
+    }
+
+/**/
+
+
+/*Carousel Styles*/
+
+.carousel {
+  background: #EEE;
+  margin: 20px 0;
+}
+
+.carousel-cell {
+  width: 100%;
+  height: 100%;
+}
+
+
+/**/
+    
+    #sidebar {
+        display: none;
+        width: 0;
+    }
 }
 
 
