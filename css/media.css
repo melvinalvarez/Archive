@@ -29,7 +29,7 @@
     #menu-container {
       display: block;
       border-bottom: 1px solid black;
-      
+      top: 8px;
     }
     
         #mobile-menu {
