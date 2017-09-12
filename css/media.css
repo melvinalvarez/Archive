@@ -17,6 +17,12 @@
         display: none;
     }
     
+    
+    .flickity-container {
+        width: 100%;
+        background-color: yellow;
+    }
+    
     #flickity {
         display: block;
     }
@@ -119,7 +125,7 @@
             #toggle:checked ~ #mobile-menu-expand,
             #toggle:checked ~ #aboutSnippet-expand{
                 height: 300px;
-                border-bottom: 1px solid black;
+                border-bottom: 1px solid var(--medium-gray);
             }
             
             #toggle:checked ~ #mobile-menu-icon {
@@ -321,6 +327,11 @@ tablets, touch
     
     #masonry {
         display: none;
+    }
+    
+    .flickity-container {
+        width: 100%;
+        background-color: yellow;
     }
     
     #flickity {
