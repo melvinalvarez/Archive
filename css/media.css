@@ -8,7 +8,7 @@
     }
     
         p {
-            font-family: var(--body-sub-font);
+            font-family: 'Anonymous Pro', monospace;
             font-size: 14px;
             line-height: 1.2em;
         }
@@ -22,13 +22,13 @@
     }
     
         .flickity-content {
-            margin-top: 30px;
+            margin: 50px 0 60px 0;
         }
         
     
     #menu-container {
       display: block;
-      border-bottom: 1px solid black;
+      border-bottom: 1px solid var(--medium-gray);
       top: 8px;
     }
     
@@ -298,6 +298,8 @@
 }
 
 
+
+
 /**/
     
     #sidebar {
@@ -324,6 +326,10 @@ tablets, touch
     #flickity {
         display: block;
     }
+    
+        .flickity-project {
+            margin: 20px 0;
+        }
     
     #menu-container {
       display: block;

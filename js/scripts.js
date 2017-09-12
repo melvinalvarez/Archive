@@ -294,9 +294,9 @@ $("#twitter").hover(function(event) {
 
 
 //disable work-links when menu is expanded
-$("#menu-container > a").click(function() {
-  event.stopImmediatePropagation(); 
-});
+//$("#menu-container > a").click(function() {
+//  event.stopImmediatePropagation(); 
+//});
 
 // Element on screen visibility
 
