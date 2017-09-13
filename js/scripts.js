@@ -261,7 +261,7 @@ $("#masonry-Warcycle").hover(function() {
 });
 
 // Hover alert for changing to experimental cursor instead of link
-$("#twitter").hover(function(event) {
+$("#experimentalCursor").hover(function(event) {
     $("#click-guide").css({top: event.clientY-50, left: event.clientX}).show();
 }, function() {
     $("#click-guide").hide();

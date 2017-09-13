@@ -64,6 +64,7 @@ p {
     font-family: var(--body-font);
     font-size: var(--body-font-size);
     line-height: var(--body-line-height);
+    font-weight: 700;
 }
 
     .col-1 p {
@@ -84,6 +85,7 @@ ul, li {
 a {
     text-decoration: none;
     cursor: pointer;
+    color: #000000;
 }
 
 a:visited {
