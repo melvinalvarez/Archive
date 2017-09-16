@@ -412,13 +412,15 @@ button {
             
     /*Cursor Guides*/
     
-        #click-guide {
+        #click-guide,
+        #shop-guide {
             position: absolute;
             display: none;
             width: 120px;
         }
         
-            #click-guide p {
+            #click-guide p,
+            #shop-guide p{
                 font-family: 'Anonymous Pro', monospace;
                 font-size: 11px;
                 background-color: black;

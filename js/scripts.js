@@ -267,6 +267,12 @@ $("#experimentalCursor").hover(function(event) {
     $("#click-guide").hide();
 });
 
+$("#menu-line-shop").hover(function(event) {
+    $("#shop-guide").css({top: event.clientY-50, left: event.clientX}).show();
+}, function() {
+    $("#shop-guide").hide();
+});
+
 //Experimental Cursor
 
 
