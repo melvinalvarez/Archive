@@ -654,13 +654,15 @@ img {
         top: -60px;
         background-size: 30px 30px;
         cursor: pointer;
+        background-color: transparent;
     }
     
     #sidebar-list {
-        background-image: url("https://storage.googleapis.com/melvin-images/assets/icon-list.svg");
+        background-image: url("https://storage.googleapis.com/melvin-images/assets/icon-list_02.svg");
         top: -150px;
-        background-size: 60px 60px;
+        background-size: 30px 30px;
         cursor: pointer;
+        background-color: transparent;
     }
     
     #sidebar-vr {
@@ -669,8 +671,9 @@ img {
         width: 30px;
         top: -240px;
         position: relative;
-        background-size: 16px 30px;
+        background-size: 30px 16px;
         cursor: pointer;
+        background-color: transparent;
     }
 
     #sidebar-quote-button {
