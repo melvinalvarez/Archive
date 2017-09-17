@@ -617,35 +617,77 @@ img {
 
 /*sidebar elements*/
 
-#sidebar-vr-button {
-    background-image: url("https://storage.googleapis.com/melvin-images/assets/icon-VR-sm.svg");
-    height: 20px;
-    width: 40px;
+.sidebar-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: auto;
     position: relative;
-    top: 30px;
-    right: 10px;
+    height: 400px;
+    right: 24px;
+    
 }
 
-#sidebar-quote-button {
-    margin-top: 50px;
-}
-
-#sidebar-quote {
-    text-align: right;
-    transform: rotate(90deg);
-    white-space: nowrap;
-    align-self: center;
-    position: relative;
-    right: 10px;
-}
-
-    #sidebar-quote p {
-        font-family: 'Anonymous Pro', monospace;
-        font-size: .8em;
-        font-weight: 400;
-        letter-spacing: 0.02em;
-        color: var(--menu-text-color);
+    #sidebar-flickity,
+    #sidebar-masonry,
+    #sidebar-list {
+        background-size: 30px 30px;
+        height: 30px;
+        position: relative;
     }
+    
+    #sidebar-flickity {
+        background-image: url("https://storage.googleapis.com/melvin-images/assets/icon-flickity.svg");
+        top: 30px;
+        background-size: 30px 30px;
+        cursor: pointer;
+    }
+    
+    #sidebar-masonry {
+        background-image: url("https://storage.googleapis.com/melvin-images/assets/icon-masonry.svg");
+        top: -60px;
+        background-size: 30px 30px;
+        cursor: pointer;
+    }
+    
+    #sidebar-list {
+        background-image: url("https://storage.googleapis.com/melvin-images/assets/icon-list.svg");
+        top: -150px;
+        background-size: 60px 60px;
+        cursor: pointer;
+    }
+    
+    #sidebar-vr {
+        background-image: url("https://storage.googleapis.com/melvin-images/assets/icon-vr.png");
+        height: 16px;
+        width: 30px;
+        top: -240px;
+        position: relative;
+        background-size: 16px 30px;
+        cursor: pointer;
+    }
+
+    #sidebar-quote-button {
+        margin-top: 50px;
+    }
+    
+    #sidebar-quote {
+        text-align: center;
+        transform: rotate(90deg);
+        white-space: nowrap;
+        align-self: center;
+        position: relative;
+        right: 14px;
+        top: -120px;
+    }
+    
+        #sidebar-quote p {
+            font-family: 'Anonymous Pro', monospace;
+            font-size: .8em;
+            font-weight: 400;
+            letter-spacing: 0.02em;
+            color: var(--menu-text-color);
+        }
 
 /*Animations, Transitions*/
 .hide {
