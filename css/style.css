@@ -11,11 +11,12 @@
     --background-color: #F9F9F9; /*#E5E5E5*/
     --copy-text-color: #3F3F3F;
     --menu-text-color: #3A3A3A;
-    --medium-gray: #BDBDBD;
     --invisible: 0;
     --visible: 1;
     --black: #1A1A1A;
     --light-gray: #FAFAFA;
+    --medium-gray: #BDBDBD;
+    --dark-gray: #828282;
     --white: #FFFFFF;
     --yellow: #FFD600;
     --pink: #F416EB;
@@ -631,17 +632,22 @@ img {
     #sidebar-flickity,
     #sidebar-masonry,
     #sidebar-list {
-        background-size: 30px 30px;
         height: 30px;
         position: relative;
     }
     
     #sidebar-flickity {
-        background-image: url("https://storage.googleapis.com/melvin-images/assets/icon-flickity.svg");
+        width: 30px;
+        background-color: var(--medium-gray);
         top: 30px;
         background-size: 30px 30px;
         cursor: pointer;
+        transition: background-color .2s ease-in;
     }
+    
+        #sidebar-flickity:hover {
+            background-color: var(--dark-gray);
+        }
     
     #sidebar-masonry {
         background-image: url("https://storage.googleapis.com/melvin-images/assets/icon-masonry.svg");

@@ -315,8 +315,8 @@
 
 
 /* On medium screens,
-tablets, touch
-- try to use all elements from large screen
+tablets, touch (handles portrait mode and bigger mobile screens)
+- mobile-menu on portrait
 */
 @media (min-width: 601px) and (max-width: 900px){
   
