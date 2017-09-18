@@ -639,7 +639,7 @@ img {
     #sidebar-flickity {
         width: 30px;
         background-color: var(--medium-gray);
-        top: 30px;
+        top: 20px;
         background-size: 30px 30px;
         cursor: pointer;
         transition: background-color .2s ease-in;
@@ -651,7 +651,7 @@ img {
     
     #sidebar-masonry {
         background-image: url("https://storage.googleapis.com/melvin-images/assets/icon-masonry.svg");
-        top: -60px;
+        top: -68px;
         background-size: 30px 30px;
         cursor: pointer;
         background-color: transparent;
@@ -659,7 +659,7 @@ img {
     
     #sidebar-list {
         background-image: url("https://storage.googleapis.com/melvin-images/assets/icon-list_02.svg");
-        top: -150px;
+        top: -154px;
         background-size: 30px 30px;
         cursor: pointer;
         background-color: transparent;
@@ -696,6 +696,22 @@ img {
             font-weight: 400;
             letter-spacing: 0.02em;
             color: var(--menu-text-color);
+        }
+        
+    #sidebar-backtotop {
+        height: 30px;
+        width: 30px;
+        position: relative;
+        background-color: var(--medium-gray);
+        top: -14px;
+        right: 2px;
+        background-size: 30px 30px;
+        cursor: pointer;
+        transition: visibility .2s ease-in;
+    }
+    
+        #sidebar-backtotop:hover {
+            background-color: var(--dark-gray);
         }
 
 /*Animations, Transitions*/
