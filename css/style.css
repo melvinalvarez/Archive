@@ -638,7 +638,7 @@ img {
     
     #sidebar-flickity {
         width: 30px;
-        background-color: var(--medium-gray);
+        background-color: var(--dark-gray);
         top: 20px;
         background-size: 30px 30px;
         cursor: pointer;

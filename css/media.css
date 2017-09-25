@@ -658,6 +658,19 @@ tablets, touch (handles portrait mode and bigger mobile screens)
 #menu-container {
     display: none;
  }
+ 
+ .flickity-container {
+        width: 100%;
+        background-color: yellow;
+    }
+    
+    #flickity {
+        display: block;
+    }
+    
+        .flickity-project {
+            margin: 20px 0;
+        }
 
 }
 
