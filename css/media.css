@@ -123,7 +123,7 @@
                 
             #toggle:checked ~ #mobile-menu-expand,
             #toggle:checked ~ #aboutSnippet-expand{
-                height: 300px;
+                height: 500px;
                 border-bottom: 1px solid var(--medium-gray);
             }
             
@@ -148,8 +148,7 @@
            
         
     
-        #masonry-aboutSnippet,
-        .aboutSnippet-links {
+        #masonry-aboutSnippet {
             display: inline-block;
             position: relative;
             right: 60px;
@@ -159,10 +158,17 @@
     
             .aboutSnippet-line {
                 position: relative;
-                right: -170px;
+                right: -96px;
+                top: 170px;
                 height: 1px;
                 width: 200px;
                 background-color: var(--menu-text-color);
+            }
+            
+            .aboutSnippet-links {
+                position: relative;
+                right: 208px;
+                top: 180px;
             }
         
         .grid-item {
@@ -433,7 +439,7 @@ tablets, touch (handles portrait mode and bigger mobile screens)
                 
             #toggle:checked ~ #mobile-menu-expand,
             #toggle:checked ~ #aboutSnippet-expand{
-                height: 300px;
+                height: 500px;
                 border-bottom: 1px solid black;
             }
             
@@ -469,7 +475,8 @@ tablets, touch (handles portrait mode and bigger mobile screens)
     
             .aboutSnippet-line {
                 position: relative;
-                right: -170px;
+                right: -96px;
+                top: 170px;
                 height: 1px;
                 width: 200px;
                 background-color: var(--menu-text-color);
