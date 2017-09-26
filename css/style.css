@@ -461,7 +461,6 @@ img {
         #masonry-aboutSnippet p,
         .aboutSnippet-links p {
             font-family: 'Anonymous Pro', monospace;
-            text-align: right;
             font-size: 0.72em;
             line-height: 1.3em;
         }

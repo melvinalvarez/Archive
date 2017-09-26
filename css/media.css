@@ -167,9 +167,21 @@
             
             .aboutSnippet-links {
                 position: relative;
-                right: 208px;
+                width: 200px;
+                right: -92px;
                 top: 180px;
             }
+                
+                .aboutSnippet-links p,
+                .aboutSnippet-links a {
+                    font-family: 'Anonymous Pro', monospace;
+                    font-size: 1em;
+                    color: var(--menu-text-color);
+                    position: relative;
+                    text-align: left;
+                }
+            
+            
         
         .grid-item {
             margin: 0 auto;
