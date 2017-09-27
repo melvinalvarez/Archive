@@ -136,8 +136,14 @@ $carousel.on( 'settle.flickity', function() {
   console.log( 'Flickity settled at ' + flkty.selectedIndex );
   
   if (flkty.selectedIndex == 0) {
-    $("#FlickityWorkTitle").text('36 Days of Type');
- }
+    $("body").css("background-color","blue");
+  } else if (flkty.selectedIndex == 1) {
+    $("body").css("background-color","red");
+  } else if (flkty.selectedIndex == 2) {
+    $("body").css("background-color","yellow");
+  } else if (flkty.selectedIndex == 3) {
+    $("body").css("background-color","green");
+  }
 
   
 });

@@ -54,6 +54,7 @@
 
 body {
     background-color: var(--background-color);
+    transition: background-color .1s ease-in;
 }
 
 h1{
@@ -461,8 +462,8 @@ img {
         #masonry-aboutSnippet p,
         .aboutSnippet-links p {
             font-family: 'Anonymous Pro', monospace;
-            font-size: 0.78em;
-            line-height: 1.3em;
+            font-size: 0.9em;
+            line-height: 1.32em;
         }
 
     .grid-item {

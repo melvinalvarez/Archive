@@ -3,6 +3,11 @@
 - hide sidebar except for back to top button
 */
 @media (max-width: 600px) {
+   
+    body {
+        background-color: blue;
+    }
+       
     header {
         display: none;
     }
@@ -26,9 +31,9 @@
         display: block;
     }
     
-        .flickity-content {
+        /*.flickity-content {
             margin: 50px 0 60px 0;
-        }
+        }*/
         
     
     #menu-container {
@@ -167,7 +172,7 @@
             
             .aboutSnippet-links {
                 position: relative;
-                width: 200px;
+                width: 240px;
                 right: -96px;
                 top: 180px;
             }
@@ -317,9 +322,28 @@
 
 .carousel-cell {
   width: 100%;
-  height: 280px;
+  height: 500px;
 }
 
+     /*custom color for each project cell*/
+    
+        #flickity-apollo {
+            background-color: blue;
+        }
+        
+        #flickity-outclicks {
+            background-color: red;
+        }
+        
+        #flickity-floodkit {
+            background-color: yellow;
+        }
+        
+        #flickity-racspotting {
+            background-color: green;
+        }
+        
+        
 
 
 
@@ -348,7 +372,6 @@ tablets, touch (handles portrait mode and bigger mobile screens)
     
     .flickity-container {
         width: 100%;
-        background-color: yellow;
     }
     
     #flickity {
@@ -358,6 +381,7 @@ tablets, touch (handles portrait mode and bigger mobile screens)
         .flickity-project {
             margin: 20px 0;
         }
+    
     
     #menu-container {
       display: block;
@@ -633,6 +657,7 @@ tablets, touch (handles portrait mode and bigger mobile screens)
 }
 
 
+
 /**/
     
     #sidebar {
@@ -680,7 +705,6 @@ tablets, touch (handles portrait mode and bigger mobile screens)
  
  .flickity-container {
         width: 100%;
-        background-color: yellow;
     }
     
     #flickity {
