@@ -168,14 +168,14 @@
             .aboutSnippet-links {
                 position: relative;
                 width: 200px;
-                right: -92px;
+                right: -96px;
                 top: 180px;
             }
                 
                 .aboutSnippet-links p,
                 .aboutSnippet-links a {
                     font-family: 'Anonymous Pro', monospace;
-                    font-size: 1em;
+                    font-size: .78em;
                     color: var(--menu-text-color);
                     position: relative;
                     text-align: left;
