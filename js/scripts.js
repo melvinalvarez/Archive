@@ -132,8 +132,8 @@ $("#experimentalCursor").click(function() {
 var $carousel = $('.carousel').flickity();
 var flkty = $carousel.data('flickity');
 
-$carousel.on( 'settle.flickity', function() {
-  console.log( 'Flickity settled at ' + flkty.selectedIndex );
+  $carousel.on('settle.flickity', function() {
+      console.log( 'Flickity settled at ' + flkty.selectedIndex );
   
   if (flkty.selectedIndex == 0) {
     $("body").css("background-color","blue");
@@ -144,9 +144,9 @@ $carousel.on( 'settle.flickity', function() {
   } else if (flkty.selectedIndex == 3) {
     $("body").css("background-color","green");
   }
-
   
 });
+
 
 
 

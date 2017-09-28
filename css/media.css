@@ -177,17 +177,14 @@
                 top: 180px;
             }
                 
-                .aboutSnippet-links p,
-                .aboutSnippet-links a {
+                #aboutSnippet-expand a {
                     font-family: 'Anonymous Pro', monospace;
-                    font-size: .78em;
-                    color: var(--menu-text-color);
-                    position: relative;
-                    text-align: left;
+                    font-size: 1em;
+                    font-weight: 700;
+                    text-decoration: underline dotted;
+                    text-underline-position: under;
                 }
-            
-            
-        
+                
         .grid-item {
             margin: 0 auto;
         }
