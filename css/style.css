@@ -847,8 +847,7 @@ http://flickity.metafizzy.co
   height: 26px;
   border: none;
   border-radius: 50%;
-  background: white;
-  background: hsla(0, 0%, 100%, 0.75);
+  background: transparent;
   cursor: pointer;
   /* vertically center */
   -webkit-transform: translateY(-50%);
@@ -879,8 +878,7 @@ http://flickity.metafizzy.co
 }
 
 .flickity-prev-next-button:disabled {
-  opacity: 0.3;
-  cursor: auto;
+  display: none;
 }
 
 .flickity-prev-next-button svg {
@@ -892,7 +890,11 @@ http://flickity.metafizzy.co
 }
 
 .flickity-prev-next-button .arrow {
-  fill: #333;
+  fill: white;
+}
+
+.flickity-prev-next-button .no-svg {
+  color: white;
 }
 
 /* ---- page dots ---- */
