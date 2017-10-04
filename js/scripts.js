@@ -295,6 +295,19 @@ $("#experimentalCursor").hover(function(event) {
     $("#click-guide").hide();
 });
 
+// Pop up for now
+$("#menu-line-resources").hover(function(event) {
+    $("#shop-guide").css({top: event.clientY-50, left: event.clientX}).show();
+}, function() {
+    $("#shop-guide").hide();
+});
+
+$("#menu-line-process").hover(function(event) {
+    $("#shop-guide").css({top: event.clientY-50, left: event.clientX}).show();
+}, function() {
+    $("#shop-guide").hide();
+});
+
 $("#menu-line-shop").hover(function(event) {
     $("#shop-guide").css({top: event.clientY-50, left: event.clientX}).show();
 }, function() {
