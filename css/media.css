@@ -5,7 +5,6 @@
 @media (max-width: 600px) {
    
     body {
-        background-color: blue;
     }
        
     header {
@@ -675,7 +674,7 @@ tablets, touch (handles portrait mode and bigger mobile screens)
  
      .content-about .col-1 p {
             margin-left: 20px;
-            margin-top: 30px;
+            margin-top: 10px;
         }
         
  .header-divider {
