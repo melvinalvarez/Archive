@@ -148,8 +148,6 @@ var flkty = $carousel.data('flickity');
 });
 
 
-
-
 //Reveal Project Title on Hover
 
 var masonryTitle=$("#title-36days, #title-ApolloIllustrations, #title-ObliqueStrategies, #title-Nolfam, #title-DialpadSecurity, #title-ScottPilgrim, #title-DidTheRightThing, #title-Floodkit, #title-DialpadHighFive, #title-DoTheRightThing, #title-Flotus, #title-Dialpad90s, #title-DarkRoom, #title-SuperSecretBanana, #title-IconIllustrations, #title-SANFRAN, #title-100DayProject, #title-DialpadIllustrations, #title-FluidAlphabet, #title-RacSpotting, #title-RaulPlancarte, #title-Warcycle");
@@ -291,6 +289,7 @@ $("#masonry-Warcycle").hover(function() {
 // Hover alert for changing to experimental cursor instead of link
 $("#experimentalCursor").hover(function(event) {
     $("#click-guide").css({top: event.clientY-50, left: event.clientX}).show();
+    document.body.style.cursor = 'none';
 }, function() {
     $("#click-guide").hide();
 });
