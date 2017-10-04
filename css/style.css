@@ -70,6 +70,7 @@ p {
 }
 
     .col-1 p {
+        font-family: 'Anonymous Pro', monospace;
         width: 560px;
         margin: -10px 10px;
         line-height: 1.4em;
@@ -252,6 +253,7 @@ button {
       position: relative;
       display: flex;
       flex-wrap: wrap;
+      margin-bottom: 60px;
     }
     
         .col-1-image {
@@ -709,19 +711,21 @@ img {
         }
         
     #sidebar-backtotop {
+        background-image: url("https://storage.googleapis.com/melvin-images/assets/icon-back-disabled.svg");
         height: 30px;
         width: 30px;
         position: relative;
-        background-color: var(--medium-gray);
         top: -14px;
         right: 2px;
-        background-size: 30px 30px;
         cursor: pointer;
-        transition: visibility .2s ease-out;
+        background-color: transparent;
+        transition: top: .5s ease;
     }
     
         #sidebar-backtotop:hover {
-            background-color: var(--dark-gray);
+            background-image: url("https://storage.googleapis.com/melvin-images/assets/icon-back-active.svg");
+            top: -18px;
+            transition: top .5s ease;
         }
 
 /*Animations, Transitions*/

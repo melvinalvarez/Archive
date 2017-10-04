@@ -307,6 +307,18 @@ $("#sidebar-flickity").hover(function(event) {
     $("#disabled-popup").hide();
 });
 
+$("#sidebar-list").hover(function(event) {
+    $("#disabled-popup").css({top: event.clientY-20, left: event.clientX-50}).show();
+}, function() {
+    $("#disabled-popup").hide();
+});
+
+$("#sidebar-vr").hover(function(event) {
+    $("#disabled-popup").css({top: event.clientY-20, left: event.clientX-50}).show();
+}, function() {
+    $("#disabled-popup").hide();
+});
+
 //Experimental Cursor
 
 
