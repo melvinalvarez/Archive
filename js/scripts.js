@@ -301,6 +301,12 @@ $("#menu-line-shop").hover(function(event) {
     $("#shop-guide").hide();
 });
 
+$("#sidebar-flickity").hover(function(event) {
+    $("#disabled-popup").css({top: event.clientY-20, left: event.clientX-50}).show();
+}, function() {
+    $("#disabled-popup").hide();
+});
+
 //Experimental Cursor
 
 

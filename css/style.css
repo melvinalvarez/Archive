@@ -415,14 +415,16 @@ button {
     /*Cursor Guides*/
     
         #click-guide,
-        #shop-guide {
+        #shop-guide,
+        #disabled-popup{
             position: absolute;
             display: none;
             width: 120px;
         }
         
             #click-guide p,
-            #shop-guide p{
+            #shop-guide p,
+            #disabled-popup p{
                 font-family: 'Anonymous Pro', monospace;
                 font-size: 11px;
                 background-color: black;
@@ -637,13 +639,21 @@ img {
     }
     
     #sidebar-flickity {
+        background-image: url("https://storage.googleapis.com/melvin-images/assets/icon-flickity-disabled.svg");
+        background-size: 30px 30px;
+        top: 20px;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    
+    /*#sidebar-flickity {
         width: 30px;
-        background-color: var(--dark-gray);
+        background-color: var(--medium-gray);
         top: 20px;
         background-size: 30px 30px;
         cursor: pointer;
         transition: background-color .2s ease-in;
-    }
+    }*/
     
         #sidebar-flickity:hover {
             background-color: var(--dark-gray);
@@ -651,27 +661,27 @@ img {
     
     #sidebar-masonry {
         background-image: url("https://storage.googleapis.com/melvin-images/assets/icon-masonry.svg");
-        top: -68px;
+        top: -64px;
         background-size: 30px 30px;
         cursor: pointer;
         background-color: transparent;
     }
     
     #sidebar-list {
-        background-image: url("https://storage.googleapis.com/melvin-images/assets/icon-list_02.svg");
-        top: -154px;
+        background-image: url("https://storage.googleapis.com/melvin-images/assets/icon-list-disabled.svg");
+        top: -150px;
         background-size: 30px 30px;
         cursor: pointer;
         background-color: transparent;
     }
     
     #sidebar-vr {
-        background-image: url("https://storage.googleapis.com/melvin-images/assets/icon-vr.png");
-        height: 16px;
+        background-image: url("https://storage.googleapis.com/melvin-images/assets/icon-vr-disabled.svg");
+        height: 30px;
         width: 30px;
         top: -240px;
         position: relative;
-        background-size: 30px 16px;
+        background-size: 30px 30px;
         cursor: pointer;
         background-color: transparent;
     }
