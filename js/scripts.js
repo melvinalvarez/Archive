@@ -289,9 +289,12 @@ $("#masonry-Warcycle").hover(function() {
 // Hover alert for changing to experimental cursor instead of link
 $("#experimentalCursor").hover(function(event) {
     $("#click-guide").css({top: event.clientY-50, left: event.clientX}).show();
-    document.body.style.cursor = 'none';
 }, function() {
     $("#click-guide").hide();
+});
+
+$("#experimentalCursor").click(function(event) {
+   document.body.style.cursor = 'none'; 
 });
 
 // Pop up for now
