@@ -501,6 +501,7 @@ img {
         height: 280px;
         background-color: #FAFAFA;
         margin: 5px;
+        transition: all 2s ease-in;
     }
     
     .grid-item--width2 {width: 570px;}
