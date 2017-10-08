@@ -214,6 +214,7 @@
             margin: 0 auto;
         }   
     
+    #list-container,
     #col-container {
         border: 0;
         margin: 0 auto;
@@ -543,6 +544,7 @@ tablets, touch (handles portrait mode and bigger mobile screens)
             margin: 0 auto;
         }   
     
+    #list-container,
     #col-container {
         border: 0;
         margin: 0 auto;
@@ -667,6 +669,7 @@ tablets, touch (handles portrait mode and bigger mobile screens)
 */
 @media (min-width: 901px) and (max-width: 1280px){
  
+ #list-container,
  #col-container {
     width: 870px;
  }

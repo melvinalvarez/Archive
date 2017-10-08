@@ -82,6 +82,11 @@ p {
         font-family: var(--body-sub-font);
         font-size: var(--body-sub-font-size);
     }
+    
+        .col-4 ol,
+        .col-4 ul {
+            padding-left: 30px;
+        }
 
 ul, li {
     list-style: none;
@@ -209,6 +214,7 @@ button {
 - cols are wrapped in flex container (#col-container)
 */
 
+#list-container,
 #col-container {
     display: flex;
     justify-content: space-between;
@@ -222,6 +228,10 @@ button {
     top: 26px;
     margin: 0 auto;
 }
+
+    #list-container {
+        display: none;
+    }
 
     #col-container-header {}
     #col-container-header-menu {
@@ -477,7 +487,7 @@ button {
 /*img unveil transition*/
 img {
     opacity: 0;
-    transition: opacity 1s ease-in;
+    transition: opacity .5s ease-in;
     transition: position .2s ease-in;
 }
 
@@ -501,7 +511,7 @@ img {
         height: 280px;
         background-color: #FAFAFA;
         margin: 5px;
-        transition: all 2s ease-in;
+        transition: all .5s ease-in;
     }
     
     .grid-item--width2 {width: 570px;}
@@ -556,7 +566,7 @@ img {
     #title-Warcycle{
         position: absolute;
         z-index: var(--send-to-front);
-        transition: all 2s;
+        transition: all .5s;
         left: 12px;
     }
     
@@ -697,7 +707,7 @@ img {
     }
     
     #sidebar-list {
-        background-image: url("https://storage.googleapis.com/melvin-images/assets/icon-list-disabled.svg");
+        background-image: url("https://storage.googleapis.com/melvin-images/assets/icon-list.svg");
         top: -150px;
         background-size: 30px 30px;
         cursor: pointer;

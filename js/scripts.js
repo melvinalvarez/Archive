@@ -126,6 +126,18 @@ $("#experimentalCursor").click(function() {
     ); 
     });
     
+//Sidebar Toggles 
+
+$("#sidebar-masonry").click(function() {
+   $("#work-container").css("display","block");
+   $("#list-container").css("display", "none");
+});
+
+$("#sidebar-list").click(function() {
+   $("#work-container").css("display","none");
+   $("#list-container").css("display", "block");
+});
+    
     
 //Flickity Events
 var $carousel = $('.carousel').flickity();
@@ -316,12 +328,6 @@ $("#menu-line-shop").hover(function(event) {
 });
 
 $("#sidebar-flickity").hover(function(event) {
-    $("#disabled-popup").css({top: event.clientY-20, left: event.clientX-50}).show();
-}, function() {
-    $("#disabled-popup").hide();
-});
-
-$("#sidebar-list").hover(function(event) {
     $("#disabled-popup").css({top: event.clientY-20, left: event.clientX-50}).show();
 }, function() {
     $("#disabled-popup").hide();
