@@ -671,7 +671,7 @@ tablets, touch (handles portrait mode and bigger mobile screens)
  
  #list-container,
  #col-container {
-    width: 870px;
+    max-width: 870px;
  }
  
      .content-about .col-1 p {
