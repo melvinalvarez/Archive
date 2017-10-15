@@ -92,6 +92,19 @@ ul, li {
     list-style: none;
 }
 
+    .col-4 ul>li>a {
+        display: list-item;
+        list-style-type: disc;
+        list-style-position: outside;
+        line-height: 1.4em;
+    }
+
+    ul>li>a:hover {
+        color: black;
+        transition: 1s ease-in-out;
+    }
+    
+
 a {
     text-decoration: none;
     cursor: pointer;
