@@ -669,6 +669,15 @@ img {
         transition: border-color .5s;
     }
     
+    
+/*List Image Reveal on hover*/
+
+    #list-36days:hover:after {
+        content: url('https://storage.googleapis.com/melvin-images/imgs/proj-36days_04.gif');
+        display: block;
+        position: absolute;
+        left: -10px;
+    }
         
 
 /*sidebar elements*/
