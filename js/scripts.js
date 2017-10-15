@@ -132,12 +132,14 @@ $("#sidebar-masonry").click(function() {
    $("#work-container").css("display","block");
    $("#list-container").css("display", "none");
    $("#sidebar-masonry").css("background-image", "url('https://storage.googleapis.com/melvin-images/assets/icon-masonry-active.svg')");
+   $("#sidebar-list").css("background-image", "url('https://storage.googleapis.com/melvin-images/assets/icon-list.svg')");
 });
 
 $("#sidebar-list").click(function() {
    $("#work-container").css("display","none");
    $("#list-container").css("display", "block");
    $("#sidebar-masonry").css("background-image", "url('https://storage.googleapis.com/melvin-images/assets/icon-masonry.svg')");
+   $("#sidebar-list").css("background-image", "url('https://storage.googleapis.com/melvin-images/assets/icon-list-active.svg')");
 });
     
     
