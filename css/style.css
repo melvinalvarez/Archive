@@ -85,7 +85,7 @@ p {
     
         .col-4 ol,
         .col-4 ul {
-            padding-left: 30px;
+            padding-left: 20px;
         }
 
 ul, li {
@@ -713,12 +713,16 @@ img {
         }
     
     #sidebar-masonry {
-        background-image: url("https://storage.googleapis.com/melvin-images/assets/icon-masonry.svg");
+        background-image: url("https://storage.googleapis.com/melvin-images/assets/icon-masonry-active.svg");
         top: -64px;
         background-size: 30px 30px;
         cursor: pointer;
         background-color: transparent;
     }
+    
+        #sidebar-masonry:hover {
+            background-image: url("https://storage.googleapis.com/melvin-images/assets/icon-masonry-active.svg");
+        }
     
     #sidebar-list {
         background-image: url("https://storage.googleapis.com/melvin-images/assets/icon-list.svg");
