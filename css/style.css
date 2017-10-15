@@ -101,7 +101,8 @@ ul, li {
 
     ul>li>a:hover {
         color: black;
-        transition: 1s ease-in-out;
+        font-weight: 600;
+        transition: 0.3s ease-in-out;
     }
     
 
@@ -265,7 +266,7 @@ button {
       display: flex;
       z-index: var(--send-to-back);
       flex-wrap: wrap;
-      justify-content: space-between;
+      justify-content: space-between;;
     }
     
         #content-container .header-divider {
@@ -304,6 +305,16 @@ button {
     .col-2 {
       max-width: 50%;
     }
+    
+    .col-about {
+        max-width: 480px;
+    }
+    
+        .col-about>p {
+            font-family: 'Anonymous Pro', sans-serif;
+            font-size: 0.8em;
+            font-weight: 400;
+        }
     
     .col-4 {
       width: 280px;
@@ -677,6 +688,7 @@ img {
         display: block;
         position: absolute;
         left: -10px;
+        transition: all 1s ease-in-out;
     }
         
 
