@@ -690,7 +690,8 @@ img {
         border: 4px solid var(--yellow);
         display: block;
         position: absolute;
-        left: -10px;
+        left: 200px;
+        top: -10px;
         transition: all 1s ease-in-out;
     }
     
@@ -701,7 +702,8 @@ img {
         border: 4px solid var(--yellow);
         display: block;
         position: absolute;
-        left: -10px;
+        left: -40px;
+        top: -10px;
         transition: all 1s ease-in-out;
     }
 
@@ -798,6 +800,26 @@ img {
             letter-spacing: 0.02em;
             color: var(--menu-text-color);
         }
+    
+        #sidebar-quote-nofilter {
+            text-align: center;
+            transform: rotate(90deg);
+            white-space: nowrap;
+            align-self: center;
+            position: relative;
+            right: 14px;
+            top: -180px;
+        }
+        
+        #sidebar-quote-nofilter p {
+            font-family: 'Anonymous Pro', monospace;
+            font-size: .8em;
+            font-weight: 400;
+            letter-spacing: 0.02em;
+            color: var(--menu-text-color);
+        }
+    
+        
         
     #sidebar-backtotop {
         background-image: url("https://storage.googleapis.com/melvin-images/assets/icon-back-disabled.svg");
