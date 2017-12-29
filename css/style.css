@@ -834,7 +834,7 @@ img {
     }
     
         #sidebar-backtotop:hover {
-            background-image: url("https://storage.googleapis.com/melvin-images/assets/icon-back-active.svg");
+            background-image: url("https://s3-us-west-1.amazonaws.com/melvin-alvarez/assets/icon-back-active.svg");
             top: -18px;
             transition: top .5s ease;
         }
