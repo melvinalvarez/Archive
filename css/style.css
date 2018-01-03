@@ -17,12 +17,13 @@
     --light-gray: #FAFAFA;
     --medium-gray: #BDBDBD;
     --dark-gray: #828282;
+    --darkblue: #003553;
     --white: #FFFFFF;
     --yellow: #FFD600;
     --pink: #F416EB;
     
 /*Typography*/
-    --body-font`: 'Catamaran', serif;
+    --body-font`: 'Anonymous Pro', sans-serif;
     --body-sub-font: 'Anonymous Pro', monospace;
     --body-font-size: 1.2em;
     --body-sub-font-size: 0.8em;
@@ -60,6 +61,7 @@ body {
 h1{
     font-family: var(--header-font);
     font-size: var(--header-font-size);
+    color: var(--darkblue);
 }
 
 p {
