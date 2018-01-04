@@ -61,7 +61,8 @@ body {
 h1{
     font-family: var(--header-font);
     font-size: var(--header-font-size);
-    color: var(--darkblue);
+    font-weight: 600;
+    color: var(--copy-text-color);
 }
 
 p {
@@ -313,9 +314,20 @@ button {
     }
     
         .col-about>p {
-            font-family: 'Anonymous Pro', sans-serif;
-            font-size: 0.8em;
+            font-family: 'Catamaran', sans-serif;
+            font-size: 1.02em;
+            color: var(--copy-text-color);
+            line-height: 1.4em;
+            letter-spacing: 0.01em;
             font-weight: 400;
+        }
+        
+        .col-about>p>a  {
+            color: var(--darkblue);
+            border-bottom: 1px dotted var(--darkblue);
+            line-height: 1em;
+            display: inline-block;
+            padding: 0;
         }
     
     .col-4 {
@@ -385,7 +397,7 @@ button {
         font-family: var(--header-font);
         font-size: var(--header-font-size);
         line-height: var(--header-line-height);
-        font-weight: normal;
+        font-weight: 600;
     }
     
     ul#header-info li{
@@ -440,6 +452,7 @@ button {
                 position: relative;
                 transition: all .5s;
                 width: 100px;
+                font-weight: 600;
             }
             
             #menu-line-works:hover,
@@ -484,7 +497,6 @@ button {
         #disabled-popup{
             position: absolute;
             display: none;
-            width: 120px;
         }
         
             #click-guide p,
@@ -569,6 +581,7 @@ img {
     }
 
 /*project titles appear on hover near cursor*/
+    #title-Outclicks,
     #title-36days,
     #title-ApolloIllustrations,
     #title-ObliqueStrategies,
@@ -597,6 +610,7 @@ img {
         left: 12px;
     }
     
+        #title-Outclicks p,
         #title-36days p,
         #title-ApolloIllustrations p,
         #title-ObliqueStrategies p,
@@ -670,6 +684,7 @@ img {
     /*for grid-item--width2 black border*/
     /*for grid-item--width2 white border*/
     
+    #masonry-Outclicks img:hover,
     #masonry-ScottPilgrim img:hover,
     #masonry-Flotus img:hover,
     #masonry-100DayProject img:hover,
