@@ -276,6 +276,10 @@ button {
             width: 100%;
             margin-top: 20px;
         }
+        
+        .content-about {
+            display: flex;
+        }
     
     
     .col-1 {
@@ -309,8 +313,13 @@ button {
       max-width: 50%;
     }
     
+    .col-about-image {
+        max-width: 280px;
+    }
+    
     .col-about {
         max-width: 480px;
+        margin-right: 90px;
     }
     
         .col-about>p {
