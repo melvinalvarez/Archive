@@ -314,7 +314,12 @@ button {
     }
     
     .col-about-image {
-        max-width: 280px;
+        width: 280px;
+        position: relative;
+        top: 100px;
+        left: 100px;
+        height: 500px;
+        border: 1px solid var(--dark-gray);
     }
     
     .col-about {
@@ -352,13 +357,18 @@ button {
         }
         
         .col-4-header {
-            text-transform: uppercase;
             letter-spacing: 0.02em;
         }
         
+        p.col-4-header {
+            font-family: 'Catamaran', sans-serif;
+            color: var(--copy-text-color);
+        }
+        
+        
         .col-4 p {
-            font-size: 0.8em;
-            font-weight: 400;
+            font-size: 1em;
+            font-weight: 600;
         }
         
         .col-4 a {

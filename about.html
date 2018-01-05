@@ -83,44 +83,64 @@
             </header>
             
                 
-            <div id="menu-container">
+           <div id="menu-container">
                 <div id="mobile-menu">
-                    <span id="mobile-menu-number-one" class="mobile-menu-number">02</span>
-                    <a id="mobile-menu-works" href="">about <span class="mobile-menu-arrow"> &#9662; </span></a>
+                
+                    <input id="toggle" type="checkbox" unchecked>
+                    <label for="toggle" id="mobile-menu-icon">
+                        <span class="mobile-menu-line"></span>
+                        <span class="mobile-menu-line"></span>
+                        <span class="mobile-menu-line"></span>
+                    </label>
+                    
                     
                     <div id="mobile-menu-expand">
-                        <span id="mobile-menu-number-two" class="mobile-menu-number">01</span>
-                        <a id="mobile-menu-about" href="index.html">work</a><br/>
-                        <span id="mobile-menu-number-three" class="mobile-menu-number">03</span>
-                        <a id="mobile-menu-process" href="">process</a><br/>
-                        <span id="mobile-menu-number-four" class="mobile-menu-number">04</span>
-                        <a id="mobile-menu-resources" href="">resources</a><br/>
-                        <span id="mobile-menu-number-five" class="mobile-menu-number">05</span>
-                        <a id="mobile-menu-shop" href="">shop</a>
-                    </div>
-                    
-                </div>
-                <div id="masonry-aboutSnippet">
-                    <p>&nbsp; &nbsp; Melvin Alvarez is <br/> 
-                     a Web, Visual, and <br/>
-                    New Media Designer.</p>
-                    <div id="aboutSnippet-expand">
-                        <div class="aboutSnippet-line"></div>
-                        <div class="abouSnippet-links">
-                            <p> You can follow me on <br/>
-                            twitter, instagram, <br/>
-                            github, or VSCO. <br/><br/>
-                            Or send me an email.</p>
+                        <div id="mobile-menu-expanded-menu">
+                            <span id="mobile-menu-number-one" class="mobile-menu-number">01</span>
+                            <div class="menu-current"></div>
+                            <a id="mobile-menu-works" href="https://google.com" target="_blank" >works</a><br/>
+                            <span id="mobile-menu-number-two" class="mobile-menu-number">02</span>
+                            <a id="mobile-menu-about" href="https://google.com" target="_blank" >about</a><br/>
+                            <span id="mobile-menu-number-three" class="mobile-menu-number">03</span>
+                            <a id="mobile-menu-process" href="">process</a><br/>
+                            <span id="mobile-menu-number-four" class="mobile-menu-number">04</span>
+                            <a id="mobile-menu-resources" href="">resources</a><br/>
+                            <span id="mobile-menu-number-five" class="mobile-menu-number">05</span>
+                            <a id="mobile-menu-shop" href="">shop</a>
+                        </div>
+                        
+                        <div id="masonry-aboutSnippet">
+                            <div id="aboutSnippet-expand">
+                                <div class="aboutSnippet-line"></div>
+                                <div class="aboutSnippet-links">
+                                    <p>
+                                        You can follow me on 
+                                        <a href="https://twitter.com/melvinismad" target="_blank">twitter</a>, 
+                                        <a href="https://dribbble.com/melvinismad" target="_blank">dribbble</a>, 
+                                        <a href="https://instagram.com/melvinismad" target="_blank">instagram</a>, 
+                                        <a href="https://github.com/melvinalvarez" target="_blank">github</a>, 
+                                        or 
+                                        <a href="http://vsco.co/melvinismad" target="_blank">VSCO</a>. 
+                                        <br/>
+                                        <br/>
+                                        <a href="http://supersecretbanana.com" target="_blank">Super Secret Banana</a>.
+                                        <br/>
+                                        <br/>
+                                        For inquiries email me at alvarezmelvin@me.com.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    
                 </div>
             </div>
             
-            <div id="col-container" class="fade-in one">
+            <div id="col-container" class="fade-in one content-container">
                 <div id="content-container" class="content-about">
                     
                     <div class="col-about-image">
-                    img    
+                     
                     </div>
                     
                     <div class="col-about">
@@ -131,7 +151,7 @@
                         <br/><br/>
                         For me, design means understanding; it is the ability to translate something complex and usually indecipherable into something that seems so simple and natural.
                         What made me fall in love with design is its power to help achieve understanding through the use of typography, color, materiality, and composition. As a designer,
-                        you are given the opportunity to think about how other people think and react; to listen to others intently and discover something more than just surface level.
+                        you are given the opportunity to think about how other people think and react; to observe others intently and discover something more than just surface level.
                         <br/> <br/>
                         As designers, I think part of our job is to look beyond what we see to be able to truly understand what's right in front us; 
                         filter out the noise, and synthesize a solution formulated from a process that is heavily anchored to functionality while also
@@ -151,7 +171,8 @@
                     <div class="header-divider"></div>
                     
                     <div class="col-4">
-                        <p class="col-4-header">Links</p>
+                        <p class="col-4-header">Social</p>
+                        <div class="col-4-divider"></div>
                         <ul>
                             <li><a href="http://dribbble.com/melvinalvarez" target="blank">Dribbble</a></li>
                             <li><a href="https://www.instagram.com/melvinismad/" target="blank">Instagram</a></li>
@@ -163,7 +184,8 @@
                     </div>
                     
                     <div class="col-4">
-                        <p class="col-4-header">I was in</p>
+                        <p class="col-4-header">Links</p>
+                        <div class="col-4-divider"></div>
                         <ul>
                             <li><a href="#" target="blank">Core77</a></li>
                             <li><a href="#" target="blank">Otis</a></li>
@@ -175,16 +197,18 @@
                     </div>
                     
                     <div class="col-4">
-                        <p class="col-header-4"> Currently obsessed with</p>
+                        <p class="col-4-header"> Open Source</p>
+                        <div class="col-4-divider"></div>
                         <ul>
-                            <li><a href="#"> Resource Link</a></li>
+                            <li><a href="#" target="blank"> Speech-to-Text in AFrame</a></li>
                             <li><a href="#"> Resource Link</a></li>
                             <li><a href="#"> Resource Link</a></li>
                         </ul>
                     </div>
                     
                     <div class="col-4">
-                        <p class="col-header-4"> column 4</p>
+                        <p class="col-4-header"> Papers</p>
+                        <div class="col-4-divider"></div>
                         <ul>
                             <li><a href="#"> Resource Link</a></li>
                             <li><a href="#"> Resource Link</a></li>
