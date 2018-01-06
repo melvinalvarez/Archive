@@ -300,14 +300,21 @@ button {
       max-width: 50%;
     }
     
-    .col-about-image {
-        width: 280px;
+    .col-about-image-container {
+        width: 340px;
         position: relative;
-        top: 100px;
-        left: 100px;
-        height: 500px;
+        margin: 20px auto 0 auto;
+        height: 570px;
         border: 1px solid var(--dark-gray);
     }
+    
+        .col-about-image {
+            border: 1px solid var(--dark-gray);
+            height: 280px;
+            width: 280px;
+            position: relative;
+            margin: 20px auto 0 auto;
+        }
     
     .col-about {
         max-width: 480px;
