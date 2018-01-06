@@ -88,26 +88,13 @@ p {
     
         .col-4 ol,
         .col-4 ul {
-            padding-left: 10px;
+            padding-left: 0px;
         }
 
 ul, li {
     list-style: none;
 }
 
-    .col-4 ul>li>a {
-        display: list-item;
-        list-style-type: disc;
-        list-style-position: outside;
-        line-height: 1.4em;
-    }
-
-    ul>li>a:hover {
-        color: black;
-        font-weight: 600;
-        transition: 0.3s ease-in-out;
-    }
-    
 
 a {
     text-decoration: none;
