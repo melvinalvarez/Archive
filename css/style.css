@@ -713,6 +713,17 @@ img {
     
 /*List Image Reveal on hover*/
 
+    #list-xsight:hover:after {
+        content: url('https://storage.googleapis.com/melvin-images/imgs/proj-36days_04.gif');
+        height: 280px;
+        width: 280px;
+        border: 4px solid var(--yellow);
+        display: block;
+        position: absolute;
+        left: 220px;
+        top: -10px;
+    }
+
     #list-36days:hover:after {
         content: url('https://storage.googleapis.com/melvin-images/imgs/proj-36days_04.gif');
         height: 280px;
@@ -720,7 +731,7 @@ img {
         border: 4px solid var(--yellow);
         display: block;
         position: absolute;
-        left: 200px;
+        left: -40px;
         top: -10px;
         transition: all 1s ease-in-out;
     }
@@ -732,7 +743,19 @@ img {
         border: 4px solid var(--yellow);
         display: block;
         position: absolute;
-        left: -40px;
+        left: 280px;
+        top: -10px;
+        transition: all 1s ease-in-out;
+    }
+    
+    #list-racspotting:hover:after {
+        content: url('https://storage.googleapis.com/melvin-images/imgs/proj-racspotting.jpg');
+        height: 280px;
+        width: 280px;
+        border: 4px solid var(--yellow);
+        display: block;
+        position: absolute;
+        left: 280px;
         top: -10px;
         transition: all 1s ease-in-out;
     }
