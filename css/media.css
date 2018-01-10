@@ -102,6 +102,7 @@
                     position: relative;
                     left: 30px;
                     top: 20px;
+                    z-index: var(--send-to-front);
                 }
                 
                 
@@ -146,6 +147,8 @@
             #toggle:checked ~ #aboutSnippet-expand{
                 height: 500px;
                 border-bottom: 1px solid var(--medium-gray);
+                position: relative;
+                z-index: var(--send-to-back);
             }
             
             #toggle:checked ~ #mobile-menu-icon {
@@ -172,6 +175,7 @@
         #masonry-aboutSnippet {
             display: inline-block;
             position: relative;
+            z-index: var(--send-to-back);
             right: 60px;
             top: -136px;
             width: 100%;
@@ -510,6 +514,8 @@ tablets, touch (handles portrait mode and bigger mobile screens)
             #toggle:checked ~ #aboutSnippet-expand{
                 height: 500px;
                 border-bottom: 1px solid black;
+                position: relative;
+                z-index: var(--send-to-back);
             }
             
             #toggle:checked ~ #mobile-menu-icon {
@@ -619,6 +625,23 @@ tablets, touch (handles portrait mode and bigger mobile screens)
             background-color: black;
             padding: 0 10px;
         }
+        
+/*This fixes menu click issue with #aboutSnippet-expand overlap*/
+    #aboutSnippet-expand {
+        position: relative;
+        z-index: var(--send-to-back);
+    }
+    
+    #mobile-menu-expand,
+    #mobile-menu-expanded-menu,
+    #mobile-menu-works,
+    #mobile-menu-about,
+    #mobile-menu-process,
+    #mobile-menu-resources,
+    #mobile-menu-shop {
+        position: relative;
+        z-index: var(--send-to-front);
+    }
 
 /*for screen*/
 
