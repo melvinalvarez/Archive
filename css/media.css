@@ -17,6 +17,23 @@
             line-height: 1.2em;
         }
     
+    .col-2 {
+        max-width: 100%;
+    }
+    
+    .col-4 {
+        margin-left: 0px;
+    }
+    
+        .col-4-divider {
+            width: 100%;
+        }
+        
+        .col-4 a {
+            font-size: 0.9em;
+            line-height: 2.0em;
+        }
+    
     #masonry {
         display: block;
     }
@@ -232,6 +249,24 @@
         .content-container {
             border-left: 0px;
         }
+        
+/*MOBILE - ABOUT SECTION*/
+
+    .col-about-image-container {
+        top: 40px;
+        width: 340px;
+        margin-bottom: 40px;
+    }
+    
+        .col-about-image {
+            width: 240px;
+            height: 240px;
+        }
+        
+    .col-2.col-about>p {
+        width: 280px;
+        font-size: 1.036em;
+    }
 
 /*Reveal Titles on top of work*/
 
