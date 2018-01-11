@@ -319,17 +319,6 @@ $("#experimentalCursor").click(function(event) {
 });
 
 // Pop up for now
-$("#menu-line-resources").hover(function(event) {
-    $("#shop-guide").css({top: event.clientY-50, left: event.clientX}).show();
-}, function() {
-    $("#shop-guide").hide();
-});
-
-$("#menu-line-process").hover(function(event) {
-    $("#shop-guide").css({top: event.clientY-50, left: event.clientX}).show();
-}, function() {
-    $("#shop-guide").hide();
-});
 
 $("#menu-line-shop").hover(function(event) {
     $("#shop-guide").css({top: event.clientY-50, left: event.clientX}).show();
