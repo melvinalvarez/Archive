@@ -318,7 +318,7 @@ button {
     
     .col-about {
         max-width: 480px;
-        margin-right: 90px;
+        /*margin-right: 90px;*/
     }
     
         .col-about>p {
