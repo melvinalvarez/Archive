@@ -25,6 +25,10 @@
         margin-left: 0px;
     }
     
+        .col-4:first-of-type {
+            margin-top: 80px;
+        }
+    
         .col-4-divider {
             width: 100%;
         }
