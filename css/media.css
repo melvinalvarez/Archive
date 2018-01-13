@@ -54,7 +54,16 @@
         /*.flickity-content {
             margin: 50px 0 60px 0;
         }*/
-        
+    
+    #sidebar-backtotop {
+        display: block;
+    }
+    
+        #sidebar-backtotop:hover {
+            display: block;
+    
+        }
+    
     
     #menu-container {
       display: block;
@@ -391,7 +400,8 @@
 
 /**/
     
-    #sidebar {
+    .sidebar-buttons,
+    #sidebar-quote {
         display: none;
         width: 0;
     }
@@ -724,7 +734,8 @@ tablets, touch (handles portrait mode and bigger mobile screens)
 
 /**/
     
-    #sidebar {
+    .sidebar-buttons,
+    #sidebar-quote {
         display: none;
         width: 0;
     }
