@@ -77,6 +77,17 @@
             background-color: white;
         }
         
+            #mobile-menu-header {
+                width: 40%;
+                position: absolute;
+                top: 6px;
+                right: 10px;
+            }
+            
+                #mobile-menu-header p {
+                    font-family: 'Catamaran', sans-serif;
+                }
+        
             #mobile-menu-icon {
                 position: relative;
                 padding: 4px;
