@@ -458,6 +458,20 @@ tablets, touch (handles portrait mode and bigger mobile screens)
             background-color: white;
         }
         
+             #mobile-menu-header {
+                width: 40%;
+                position: absolute;
+                top: 6px;
+                right: 10px;
+                z-index: var(--bring-to-front);
+            }
+            
+                #mobile-menu-header p {
+                    font-family: 'Catamaran', sans-serif;
+                    position: relative;
+                    z-index: var(--send-to-front);
+                }
+        
             #mobile-menu-icon {
                 position: relative;
                 padding: 4px;
