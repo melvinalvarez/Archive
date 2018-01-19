@@ -315,6 +315,13 @@ button {
             position: relative;
             margin: 20px auto 0 auto;
         }
+        
+        .col-about-description {
+            position: relative;
+            height: 100px;
+            width: 280px;
+            margin: 10px auto 0 auto;
+        }
     
     .col-about {
         max-width: 480px;
