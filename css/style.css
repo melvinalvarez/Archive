@@ -321,7 +321,12 @@ button {
             height: 20px;
             width: 280px;
             margin: 10px auto 0 auto;
+            left: -8px;
         }
+        
+            .col-about-description input {
+                border-style: none;
+            }
         
         .col-about-profile {
             position: relative;
@@ -329,6 +334,12 @@ button {
             width: 280px;
             margin: 20px auto 0 auto;
         }
+        
+            .col-about-profile p {
+                font-family: 'Catamaran', serif;
+                font-size: 1em;
+                font-weight: 400;
+            }
     
     .col-about {
         max-width: 480px;
