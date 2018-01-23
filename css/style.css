@@ -335,9 +335,18 @@ button {
             margin: 20px auto 0 auto;
         }
         
-            .col-about-profile p {
+            .col-about-profile h3 {
                 font-family: 'Catamaran', serif;
-                font-size: 1em;
+                font-size: 1.2em;
+                font-weight: 400;
+                position: relative;
+                top: -10px;
+                margin-bottom: -20px;
+            }
+        
+            .col-about-profile p {
+                font-family: 'Anonymous Pro', sans-serif;
+                font-size: 0.8em;
                 font-weight: 400;
             }
     
