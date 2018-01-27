@@ -438,6 +438,11 @@ tablets, touch (handles portrait mode and bigger mobile screens)
         display: none;
     }
     
+     .col-2 {
+        max-width: 100%;
+    }
+    
+    
     #masonry {
         display: none;
     }
@@ -648,7 +653,7 @@ tablets, touch (handles portrait mode and bigger mobile screens)
     }
     
     #content-container {
-        width: var(--four-column);
+        width: var(--two-column);
         margin: 0 auto;
     }
     
