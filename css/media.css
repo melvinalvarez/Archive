@@ -292,6 +292,15 @@
             width: 240px;
             height: 240px;
         }
+       
+    .col-about-description {
+        left: 18px;
+    }   
+    
+    /*to do fix toggle expansions on click*/
+    .col-about-profile {
+        display: none;
+    }
         
     .col-2.col-about>p {
         width: 280px;
