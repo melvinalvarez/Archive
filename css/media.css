@@ -443,8 +443,14 @@ tablets, touch (handles portrait mode and bigger mobile screens)
     }
     
     
+    .grid {
+        padding: 20px 0 0 0;
+        max-width: 580px;
+        margin: 0 auto;
+    }
+    
     #masonry {
-        display: none;
+        display: block;
     }
     
     .flickity-container {
@@ -637,7 +643,7 @@ tablets, touch (handles portrait mode and bigger mobile screens)
     .content-container {
         position: relative;
         top: 100px;
-        max-width: 280px;
+        max-width: 580px;
         border-right: 0;
         margin: 0 auto;
         z-index: var(--send-to-back);
@@ -662,11 +668,11 @@ tablets, touch (handles portrait mode and bigger mobile screens)
     }
     
         #col-container-header .header-divider {
-        width: 80%;
-    }
+            width: 80%;
+        }
     
     #content-container {
-        width: var(--two-column);
+        width: var(--four-column);
         margin: 0 auto;
     }
     
