@@ -38,7 +38,7 @@
 /*Masonry*/
     --grid-max-width: 1160px;
     --one-column: 1150px;
-    --two-column: 570px;
+    --two-column: 580px;
     --four-column: 280px;
     
 /*Mobile Menu*/
@@ -208,7 +208,7 @@ button {
     
         #mobile-menu-about {
             position: relative;
-            z-index: var(--bring-to-front);
+            z-index: var(--send-to-front);
         }
 
         

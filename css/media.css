@@ -473,11 +473,11 @@ tablets, touch (handles portrait mode and bigger mobile screens)
         }
         
              #mobile-menu-header {
-                width: 40%;
+                width: 28%;
                 position: absolute;
-                top: 6px;
+                top: 0px;
                 right: 10px;
-                z-index: var(--bring-to-front);
+                z-index: var(--send-to-front);
             }
             
                 #mobile-menu-header p {
@@ -491,6 +491,7 @@ tablets, touch (handles portrait mode and bigger mobile screens)
                 padding: 4px;
                 left: 14px;
                 top: 6px;
+                z-index: var(--send-to-front)
             }
             
                 .mobile-menu-line {
@@ -514,7 +515,8 @@ tablets, touch (handles portrait mode and bigger mobile screens)
             
                 #mobile-menu-expand{
                     position: relative;
-                    height: 0px;
+                    width: 0px;
+                    height: 100vh;
                     overflow: hidden;
                     transition: height 0.2s;
                     background-color: white;
@@ -540,7 +542,7 @@ tablets, touch (handles portrait mode and bigger mobile screens)
             #mobile-menu-works,    
             #mobile-menu a {
                 font-family: 'Catamaran', sans-serif;
-                font-size: 1.5em;
+                font-size: 1.6em;
                 color: var(--menu-text-color);
                 position: relative;
                 left: -2px;
@@ -566,10 +568,13 @@ tablets, touch (handles portrait mode and bigger mobile screens)
                 
             #toggle:checked ~ #mobile-menu-expand,
             #toggle:checked ~ #aboutSnippet-expand{
-                height: 500px;
-                border-bottom: 1px solid black;
+                width: 300px;
+                height: 100vh;
+                border-right: 1px solid black;
                 position: relative;
                 z-index: var(--send-to-back);
+                margin-top: 17px;
+                transition: width 140ms ease-in;
             }
             
             #toggle:checked ~ #mobile-menu-icon {
@@ -597,15 +602,23 @@ tablets, touch (handles portrait mode and bigger mobile screens)
         .aboutSnippet-links {
             display: inline-block;
             position: relative;
-            right: 60px;
-            top: -136px;
-            width: 100%;
+            right: -20px;
+            top: 20px;
+            width: 90%;
         }
+        
+            #aboutSnippet-expand a {
+                font-family: 'Anonymous Pro', monospace;
+                font-size: 1em;
+                font-weight: 700;
+                text-decoration: underline dotted;
+                text-underline-position: under;
+            }
     
             .aboutSnippet-line {
                 position: relative;
-                right: -96px;
-                top: 170px;
+                right: -20px;
+                top: 20px;
                 height: 1px;
                 width: 200px;
                 background-color: var(--menu-text-color);
