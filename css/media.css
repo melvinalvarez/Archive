@@ -672,7 +672,7 @@ tablets, touch (handles portrait mode and bigger mobile screens)
         }
     
     #content-container {
-        width: var(--four-column);
+        width: var(--two-column);
         margin: 0 auto;
     }
     
