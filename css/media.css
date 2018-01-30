@@ -631,7 +631,7 @@ tablets, touch (handles portrait mode and bigger mobile screens)
             }
         
         .grid-item {
-            margin: 0 auto;
+            margin: 5px;
         }
     
         .grid-item--width2,
@@ -685,7 +685,7 @@ tablets, touch (handles portrait mode and bigger mobile screens)
 
 /*for mobile*/
     .m-title {
-        display: inline;
+        display: none;
         position: absolute;
         z-index: var(--send-to-front);
         transition: all 2s;
@@ -747,12 +747,6 @@ tablets, touch (handles portrait mode and bigger mobile screens)
     }
     
 /*Grid item spacing adjustments*/
-
-.grid-item,
-.grid-item--width2,
-.grid-item--height2 {
-    margin-top: 60px;
-}
 
 /*disable clicking on works*/
 
