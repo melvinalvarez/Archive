@@ -309,11 +309,13 @@ button {
     }
     
         .col-about-image {
+            content: url("https://storage.googleapis.com/melvin-images/imgs/about-img_01");
             border: 1px solid var(--dark-gray);
             height: 280px;
             width: 280px;
             position: relative;
             margin: 20px auto 0 auto;
+            opacity: 1;
         }
         
         .col-about-description {

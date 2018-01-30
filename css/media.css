@@ -289,13 +289,12 @@
     }
     
         .col-about-image {
+            content: url("https://storage.googleapis.com/melvin-images/imgs/about-img_01");
             width: 240px;
             height: 240px;
+            opacity: 1 !important; 
         }
         
-            img.col-about-image {
-                opacity: 1;
-            }
        
     .col-about-description {
         left: 18px;
