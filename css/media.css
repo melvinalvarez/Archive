@@ -292,6 +292,10 @@
             width: 240px;
             height: 240px;
         }
+        
+            img.col-about-image {
+                opacity: 1;
+            }
        
     .col-about-description {
         left: 18px;
