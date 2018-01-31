@@ -256,7 +256,7 @@ button {
       display: flex;
       z-index: var(--send-to-back);
       flex-wrap: wrap;
-      justify-content: space-between;;
+      justify-content: flex-start;
     }
     
         #content-container .header-divider {
