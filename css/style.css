@@ -89,6 +89,7 @@ p {
         .col-4 ol,
         .col-4 ul {
             padding-left: 0px;
+            line-height: 1.2em;
         }
 
 ul, li {
@@ -99,7 +100,7 @@ ul, li {
 a {
     text-decoration: none;
     cursor: pointer;
-    color: #000000;
+    color: var(--menu-text-color);
 }
 
 a:visited {
@@ -114,6 +115,13 @@ hr { margin-left: 10px;}
     
 button {
     border-style: none;
+}
+
+.favicon-img {
+    opacity: 1;
+    margin-right: 4px;
+    position: relative;
+    top: 4px;
 }
 
 /****/
@@ -398,13 +406,14 @@ button {
         
         .col-4 p {
             font-size: 1em;
-            font-weight: 400;
+            font-weight: 600;
         }
         
         .col-4 a {
             font-family: 'Anonymous Pro', monospace;
             font-weight: 400;
             font-size: 0.8em;
+            color: var(--menu-text-color);
         }
     
 
@@ -532,6 +541,12 @@ button {
             .resources-line {
                 left: 124px;
             }
+            
+                .active-line-anim {
+                    animation: activeLine;
+                    animation-duration: 2s;
+                    animation-timing-function: ease-in-out;
+                }
             
             
             .shop-line {
@@ -1139,6 +1154,13 @@ http://flickity.metafizzy.co
 
 .flickity-page-dots .dot.is-selected {
   opacity: 1;
+}
+
+/** Animations **/
+
+@keyframes activeLine {
+    0% {width: 40px;}
+    100% {width: 200px;}
 }
 
 /**/
