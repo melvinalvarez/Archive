@@ -91,6 +91,12 @@ p {
             padding-left: 0px;
             line-height: 1.2em;
         }
+        
+            .col-4 ul li a:hover {
+                color: var(--darkblue);
+                text-transform: uppercase;
+                letter-spacing: 0.08em;
+            }
 
 ul, li {
     list-style: none;
