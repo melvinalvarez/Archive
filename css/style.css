@@ -677,6 +677,7 @@ img {
     #masonry-SANFRAN img:hover,
     #masonry-DialpadIllustrations img:hover,
     #masonry-FluidAlphabet img:hover,
+    #masonry-ConwayEcoFest img:hover,
     #masonry-RacSpotting img:hover{
         box-sizing: border-box;
         width: 280px;
@@ -709,6 +710,7 @@ img {
     #masonry-Outclicks img:hover,
     #masonry-ScottPilgrim img:hover,
     #masonry-Flotus img:hover,
+    #masonry-Ambi img:hover,
     #masonry-100DayProject img:hover,
     #masonry-Warcycle img:hover{
         box-sizing: border-box;

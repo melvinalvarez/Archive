@@ -168,6 +168,19 @@ var flkty = $carousel.data('flickity');
 var masonryTitle=$(".title-display");
 
     masonryTitle.hide();
+    
+$("#masonry-ConwayEcoFest").hover(function() {
+    $("#title-ConwayEcoFest").show();
+}, function() {
+    $("#title-ConwayEcoFest").hide();   
+});
+    
+
+$("#masonry-Ambi").hover(function() {
+    $("#title-Ambi").show();
+}, function() {
+    $("#title-Ambi").hide();   
+});
 
 $("#masonry-TeePublicConvergence").hover(function() {
     $("#title-TeePublicConvergence").show();
