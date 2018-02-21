@@ -684,6 +684,8 @@ img {
     #masonry-DialpadIllustrations img:hover,
     #masonry-FluidAlphabet img:hover,
     #masonry-ConwayEcoFest img:hover,
+    #masonry-LensLoft img:hover,
+    #masonry-Outclicks_Illustration img:hover,
     #masonry-RacSpotting img:hover{
         box-sizing: border-box;
         width: 280px;

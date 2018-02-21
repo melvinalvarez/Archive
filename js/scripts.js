@@ -168,14 +168,25 @@ var flkty = $carousel.data('flickity');
 var masonryTitle=$(".title-display");
 
     masonryTitle.hide();
-    
+
+$("#masonry-Outclicks_Illustration").hover(function() {
+    $("#title-Outclicks_Illustration").show();
+}, function() {
+    $("#title-Outclicks_Illustration").hide();   
+});
+
+$("#masonry-LensLoft").hover(function() {
+    $("#title-LensLoft").show();
+}, function() {
+    $("#title-LensLoft").hide();   
+});
+   
 $("#masonry-ConwayEcoFest").hover(function() {
     $("#title-ConwayEcoFest").show();
 }, function() {
     $("#title-ConwayEcoFest").hide();   
 });
     
-
 $("#masonry-Ambi").hover(function() {
     $("#title-Ambi").show();
 }, function() {
