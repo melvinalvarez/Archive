@@ -332,29 +332,7 @@
 
 /*for screen*/
 
-    #title-Outclicks,
-    #title-36days,
-    #title-ApolloIllustrations,
-    #title-ObliqueStrategies,
-    #title-Nolfam,
-    #title-DialpadSecurity,
-    #title-ScottPilgrim,
-    #title-DidTheRightThing,
-    #title-Floodkit,
-    #title-DialpadHighFive,
-    #title-DoTheRightThing,
-    #title-Flotus,
-    #title-Dialpad90s,
-    #title-DarkRoom,
-    #title-SuperSecretBanana,
-    #title-IconIllustrations,
-    #title-SANFRAN,
-    #title-100DayProject,
-    #title-DialpadIllustrations,
-    #title-FluidAlphabet,
-    #title-RacSpotting,
-    #title-RaulPlancarte,
-    #title-Warcycle {
+    .title-display {
         display: block;
         top: 10px;
     }
@@ -377,6 +355,7 @@
     #masonry-FloodKit a,
     #masonry-DialpadHighFive a,
     #masonry-Dialpad90s a,
+    #masonry-TeePublicConvergence a,
     #masonry-SuperSecretBanana a,
     #masonry-IconIllustrations a,
     #masonry-SANFRAN a,
@@ -722,29 +701,7 @@ tablets, touch (handles portrait mode and bigger mobile screens)
 
 /*for screen*/
 
-    #title-Outclicks,
-    #title-36days,
-    #title-ApolloIllustrations,
-    #title-ObliqueStrategies,
-    #title-Nolfam,
-    #title-DialpadSecurity,
-    #title-ScottPilgrim,
-    #title-DidTheRightThing,
-    #title-Floodkit,
-    #title-DialpadHighFive,
-    #title-DoTheRightThing,
-    #title-Flotus,
-    #title-Dialpad90s,
-    #title-DarkRoom,
-    #title-SuperSecretBanana,
-    #title-IconIllustrations,
-    #title-SANFRAN,
-    #title-100DayProject,
-    #title-DialpadIllustrations,
-    #title-FluidAlphabet,
-    #title-RacSpotting,
-    #title-RaulPlancarte,
-    #title-Warcycle {
+    .title-display {
         display: block;
         top: 10px;
     }
@@ -759,6 +716,7 @@ tablets, touch (handles portrait mode and bigger mobile screens)
     #masonry-dialpadSecurity a, 
     #masonry-DidTheRightThing a,
     #masonry-FloodKit a,
+    #masonry-TeePublicConvergence a,
     #masonry-DialpadHighFive a,
     #masonry-Dialpad90s a,
     #masonry-SuperSecretBanana a,

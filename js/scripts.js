@@ -165,9 +165,15 @@ var flkty = $carousel.data('flickity');
 
 //Reveal Project Title on Hover
 
-var masonryTitle=$(" #title-Outclicks, #title-36days, #title-ApolloIllustrations, #title-ObliqueStrategies, #title-Nolfam, #title-DialpadSecurity, #title-ScottPilgrim, #title-DidTheRightThing, #title-Floodkit, #title-DialpadHighFive, #title-DoTheRightThing, #title-Flotus, #title-Dialpad90s, #title-DarkRoom, #title-SuperSecretBanana, #title-IconIllustrations, #title-SANFRAN, #title-100DayProject, #title-DialpadIllustrations, #title-FluidAlphabet, #title-RacSpotting, #title-RaulPlancarte, #title-Warcycle");
+var masonryTitle=$(".title-display");
 
     masonryTitle.hide();
+
+$("#masonry-TeePublicConvergence").hover(function() {
+    $("#title-TeePublicConvergence").show();
+}, function() {
+    $("#title-TeePublicConvergence").hide();   
+});
 
 $("#masonry-Outclicks").hover(function() {
     $("#title-Outclicks").show();

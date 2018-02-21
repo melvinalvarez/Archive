@@ -645,58 +645,15 @@ img {
     }
 
 /*project titles appear on hover near cursor*/
-    #title-Outclicks,
-    #title-36days,
-    #title-ApolloIllustrations,
-    #title-ObliqueStrategies,
-    #title-Nolfam,
-    #title-DialpadSecurity,
-    #title-ScottPilgrim,
-    #title-DidTheRightThing,
-    #title-Floodkit,
-    #title-DialpadHighFive,
-    #title-DoTheRightThing,
-    #title-Flotus,
-    #title-Dialpad90s,
-    #title-DarkRoom,
-    #title-SuperSecretBanana,
-    #title-IconIllustrations,
-    #title-SANFRAN,
-    #title-100DayProject,
-    #title-DialpadIllustrations,
-    #title-FluidAlphabet,
-    #title-RacSpotting,
-    #title-RaulPlancarte,
-    #title-Warcycle{
+    
+    .title-display{
         position: absolute;
         z-index: var(--send-to-front);
         transition: all .5s;
         left: 12px;
     }
     
-        #title-Outclicks p,
-        #title-36days p,
-        #title-ApolloIllustrations p,
-        #title-ObliqueStrategies p,
-        #title-Nolfam p,
-        #title-ScottPilgrim p,
-        #title-DialpadSecurity p,
-        #title-DidTheRightThing p,
-        #title-Floodkit p,
-        #title-DialpadHighFive p,
-        #title-DoTheRightThing p,
-        #title-Flotus p,
-        #title-Dialpad90s p,
-        #title-DarkRoom p,
-        #title-SuperSecretBanana p,
-        #title-IconIllustrations p,
-        #title-SANFRAN p,
-        #title-100DayProject p,
-        #title-DialpadIllustrations p,
-        #title-FluidAlphabet p,
-        #title-RacSpotting p,
-        #title-RaulPlancarte p,
-        #title-Warcycle p{
+        .title-display p{
             font-family: 'Anonymous Pro', monospace;
             font-size: 12px;
             color: white;
@@ -713,6 +670,7 @@ img {
     #masonry-DidTheRightThing img:hover,
     #masonry-FloodKit img:hover,
     #masonry-DialpadHighFive img:hover,
+    #masonry-TeePublicConvergence img:hover,
     #masonry-Dialpad90s img:hover,
     #masonry-SuperSecretBanana img:hover,
     #masonry-IconIllustrations img:hover,
