@@ -261,6 +261,35 @@ button {
         width: 100%;
     }
     
+    .process-header {
+        display: flex;
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+        .process-headline {
+            margin-top: 10px;
+            width: 100%;
+            border-bottom: 1px solid var(--dark-gray);
+        }
+        
+        .process-subheader {
+            width: 100%;
+            top: 10px;
+            bottom: 80px;
+        }
+        
+            .process-subheader p {
+                font-family: 'Anonymous Pro', serif;
+                font-size: 0.8em;
+                color: var(--copy-text-color);
+                line-height: 1em;
+                text-align: right;
+                letter-spacing: 0.01em;
+                font-weight: 400;
+            }
+        
+    
     #col-container-header .header-divider {
         width: 100%;
         margin-bottom: 20px;
