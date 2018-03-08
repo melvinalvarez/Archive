@@ -343,6 +343,14 @@ button {
       max-width: 50%;
     }
     
+    .col-process-image-container {
+        max-width: 480px;
+        position: relative;
+        margin: 20px auto 0 auto;
+        height: 570px;
+        border: 1px solid var(--dark-gray);
+    }
+    
     .col-about-image-container {
         width: 340px;
         position: relative;
