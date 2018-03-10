@@ -346,7 +346,7 @@ button {
     .col-process-image-container {
         max-width: 480px;
         position: relative;
-        margin: 20px auto 0 auto;
+        margin: 0 auto;
         height: 570px;
         border: 1px solid var(--dark-gray);
     }
@@ -364,6 +364,15 @@ button {
             border: 1px solid var(--dark-gray);
             height: 280px;
             width: 280px;
+            position: relative;
+            margin: 20px auto 0 auto;
+            opacity: 1;
+        }
+        
+        .col-process-image {
+            border: 1px solid var(--dark-gray);
+            height: 570px;
+            width: 570px;
             position: relative;
             margin: 20px auto 0 auto;
             opacity: 1;
