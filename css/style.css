@@ -264,7 +264,7 @@ button {
     .process-header {
         display: flex;
         width: 100%;
-        margin-top: 10px;
+        margin-top: 16px;
     }
     
         .process-headline {
@@ -348,7 +348,7 @@ button {
         position: relative;
         margin: 0 auto;
         height: 570px;
-        border: 1px solid var(--dark-gray);
+        border: 1px solid var(--yellow);
     }
     
     .col-about-image-container {
@@ -356,7 +356,6 @@ button {
         position: relative;
         margin: 20px auto 0 auto;
         height: 570px;
-        border: 1px solid var(--dark-gray);
     }
     
         .col-about-image {
