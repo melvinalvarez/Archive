@@ -261,6 +261,39 @@ button {
         width: 100%;
     }
     
+/*
+- carousel styles for flickity
+- custom css to override updateable flickity.css
+*/
+
+    .carousel {
+        background: yellow;
+    }
+
+    .carousel-cell {
+        width: 66%;
+        height: 400px;
+        margin-right: 10px;
+        background: var(--dark-gray);
+    }
+    
+        .carousel-cell-image {
+            display: block;
+            max-height: 100%
+            margin: 0 auto;
+            max-width: 100%;
+            opacity: 0;
+            -webkit-transition: opacity 0.4s;
+            transition: opacity 0.4s;
+        }
+        
+    /* fade in lazy loaded image */
+        .carousel-cell-image.flickity-lazyloaded,
+        .carousel-cell-image.flickity-lazyerror {
+            opacity: 1;
+        }    
+    
+    
     .process-header {
         display: flex;
         width: 100%;
@@ -268,7 +301,7 @@ button {
     }
     
         .process-headline {
-            margin-top: 22px;
+            margin-top: 20px;
             width: 100%;
             border-bottom: 1px solid var(--dark-gray);
         }
