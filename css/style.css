@@ -264,6 +264,9 @@ button {
 /*
 - carousel styles for flickity
 - custom css to override updateable flickity.css
+- carousel image uniform in size all throughout
+  pages where they will be used (process image galleries)
+- TO DO: override styles on mobile (media.css)
 */
 
     .carousel {
