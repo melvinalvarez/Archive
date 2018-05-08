@@ -369,6 +369,7 @@ $("#sidebar-vr").hover(function(event) {
 });
 
 //About Page
+//wip -- like counter
 
 function modify_qty(val) {
     var qty = document.getElementById('qty').value;
