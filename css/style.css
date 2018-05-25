@@ -271,6 +271,7 @@ button {
 
     .carousel {
         background: yellow;
+        width: 570px;
     }
 
     .carousel-cell {
@@ -380,7 +381,7 @@ button {
     }
     
     .col-process-image-container {
-        max-width: 480px;
+        max-width: 570px;
         position: relative;
         margin: 0 auto;
         height: 570px;
