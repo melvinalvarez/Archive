@@ -383,7 +383,7 @@ button {
     .col-process-image-container {
         max-width: 570px;
         position: relative;
-        margin: 0 auto;
+        margin: 0 auto 0 0;
         height: 570px;
         border: 1px solid var(--yellow);
     }
