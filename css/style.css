@@ -433,6 +433,13 @@ button {
             margin: 20px auto 0 auto;
         }
         
+        .col-flickity-description {
+            position: relative;
+            height: 280px;
+            width: 280px;
+            margin: 20px auto 0 20px;
+        }
+        
             .col-about-profile h3 {
                 font-family: 'Catamaran', serif;
                 font-size: 1.2em;
