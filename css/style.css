@@ -1151,8 +1151,8 @@ http://flickity.metafizzy.co
   opacity: 0.6;
 }
 
-.flickity-prev-next-button.previous { left: -32px; }
-.flickity-prev-next-button.next { right: -32px; }
+.flickity-prev-next-button.previous { left: 12px; }
+.flickity-prev-next-button.next { right: 12px; }
 /* right to left */
 .flickity-rtl .flickity-prev-next-button.previous {
   left: auto;
