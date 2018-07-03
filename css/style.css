@@ -758,6 +758,7 @@ img {
     
     /*for grid-item black border*/
 
+    #masonry-Ethershift img:hover,
     #masonry-36days img:hover,
     #masonry-ApolloIllustrations img:hover,
     #masonry-ObliqueStrategies img:hover,
