@@ -804,6 +804,7 @@ img {
     /*for grid-item--width2 black border*/
     /*for grid-item--width2 white border*/
     
+    #masonry-Kiosked img:hover,
     #masonry-Outclicks img:hover,
     #masonry-ScottPilgrim img:hover,
     #masonry-Flotus img:hover,

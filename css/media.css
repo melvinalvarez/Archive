@@ -347,6 +347,8 @@
 
 /*disable clicking on works*/
 
+    #masonry-Kiosked a,
+    #masonry-Outclicks a,
     #masonry-36days a,
     #masonry-ApolloIllustrations a,
     #masonry-ObliqueStrategies a,
