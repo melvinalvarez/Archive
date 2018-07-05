@@ -347,29 +347,18 @@
 
 /*disable clicking on works*/
 
-    #masonry-Kiosked a,
-    #masonry-Ethershift a,
-    #masonry-Outclicks a, /*wide*/
-    #masonry-Outclicks_Illustration a,
-    #masonry-Ambi a, /*wide*/
-    #masonry-LensLoft a,
-    #masonry-RaulPlancarte a, /*Long*/
-    #masonry-ConwayEcoFest a,
-    #maosnry-Warcycle a, /*wide*/
-    #masonry-Bandsinyourbathroom a, /*wide*/
     #masonry-36days a,
     #masonry-ApolloIllustrations a,
     #masonry-ObliqueStrategies a,
     #masonry-dialpadSecurity a, 
     #masonry-DidTheRightThing a,
     #masonry-FloodKit a,
-    #masonry-TeePublicConvergence a,
     #masonry-DialpadHighFive a,
     #masonry-Dialpad90s a,
+    #masonry-TeePublicConvergence a,
     #masonry-SuperSecretBanana a,
     #masonry-IconIllustrations a,
     #masonry-SANFRAN a,
-    #masonry-100DayProject a, /*wide*/
     #masonry-DialpadIllustrations a,
     #masonry-FluidAlphabet a,
     #masonry-RacSpotting a{
@@ -722,16 +711,6 @@ tablets, touch (handles portrait mode and bigger mobile screens)
 
 /*disable clicking on works*/
 
-    #masonry-Kiosked a,
-    #masonry-Ethershift a,
-    #masonry-Outclicks a, /*wide*/
-    #masonry-Outclicks_Illustration a,
-    #masonry-Ambi a, /*wide*/
-    #masonry-LensLoft a,
-    #masonry-RaulPlancarte a, /*Long*/
-    #masonry-ConwayEcoFest a,
-    #maosnry-Warcycle a, /*wide*/
-    #masonry-Bandsinyourbathroom a, /*wide*/
     #masonry-36days a,
     #masonry-ApolloIllustrations a,
     #masonry-ObliqueStrategies a,
@@ -744,7 +723,6 @@ tablets, touch (handles portrait mode and bigger mobile screens)
     #masonry-SuperSecretBanana a,
     #masonry-IconIllustrations a,
     #masonry-SANFRAN a,
-    #masonry-100DayProject a, /*wide*/
     #masonry-DialpadIllustrations a,
     #masonry-FluidAlphabet a,
     #masonry-RacSpotting a{
