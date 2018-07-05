@@ -118,7 +118,7 @@ $("#experimentalCursor").click(function() {
             ];
     var i = 0;
     
-    $("#masonry-Ethershift, #masonry-Kiosked, #masonry-Outclicks, #masonry-36days, #masonry-ApolloIllustrations, #masonry-ObliqueStrategies, #masonry-Nolfam, #masonry-dialpadSecurity, #masonry-ScottPilgrim, #masonry-DidTheRightThing, #masonry-FloodKit, #masonry-DialpadHighFive, #masonry-DoTheRightThing, #masonry-Flotus, #masonry-Dialpad90s, #masonry-DarkRoom, #masonry-SuperSecretBanana, #masonry-DialpadIllustrations, #masonry-SANFRAN, #masonry-100DayProject, #masonry-DialpadIllustrations, #masonry-FluidAlphabet, #masonry-RacSpotting, #masonry-RaulPlancarte, #masonry-Warcycle ").hover(
+    $("#masonry-Bandsinyourbathroom, #masonry-Ethershift, #masonry-Kiosked, #masonry-Outclicks, #masonry-36days, #masonry-ApolloIllustrations, #masonry-ObliqueStrategies, #masonry-Nolfam, #masonry-dialpadSecurity, #masonry-ScottPilgrim, #masonry-DidTheRightThing, #masonry-FloodKit, #masonry-DialpadHighFive, #masonry-DoTheRightThing, #masonry-Flotus, #masonry-Dialpad90s, #masonry-DarkRoom, #masonry-SuperSecretBanana, #masonry-DialpadIllustrations, #masonry-SANFRAN, #masonry-100DayProject, #masonry-DialpadIllustrations, #masonry-FluidAlphabet, #masonry-RacSpotting, #masonry-RaulPlancarte, #masonry-Warcycle ").hover(
         function() {
             $('.yellow-trail').css('background-color', myColors[i]);//yellow
             i = (i + 1) % myColors.length;
@@ -168,6 +168,12 @@ var flkty = $carousel.data('flickity');
 var masonryTitle=$(".title-display");
 
     masonryTitle.hide();
+    
+$("#masonry-Bandsinyourbathroom").hover(function() {
+    $("#title-Bandsinyourbathroom").show();
+}, function() {
+    $("#title-Bandsinyourbathroom").hide();   
+});    
 
 $("#masonry-Ethershift").hover(function() {
     $("#title-Ethershift").show();
@@ -363,7 +369,7 @@ $("#experimentalCursor").hover(function(event) {
 });
 
 $("#experimentalCursor").click(function(event) {
-   document.body.style.cursor = 'none'; 
+   document.body.style.cursor = 'none';
 });
 
 // Pop up for now
