@@ -141,26 +141,6 @@ $("#sidebar-list").click(function() {
    $("#sidebar-masonry").css("background-image", "url('https://storage.googleapis.com/melvin-images/assets/icon-masonry.svg')");
    $("#sidebar-list").css("background-image", "url('https://storage.googleapis.com/melvin-images/assets/icon-list-active.svg')");
 });
-    
-    
-//Flickity Events
-var $carousel = $('.carousel').flickity();
-var flkty = $carousel.data('flickity');
-
-  $carousel.on('settle.flickity', function() {
-      console.log( 'Flickity settled at ' + flkty.selectedIndex );
-  
-  if (flkty.selectedIndex == 0) {
-    $("body").css("background-color","blue");
-  } else if (flkty.selectedIndex == 1) {
-    $("body").css("background-color","red");
-  } else if (flkty.selectedIndex == 2) {
-    $("body").css("background-color","yellow");
-  } else if (flkty.selectedIndex == 3) {
-    $("body").css("background-color","green");
-  }
-  
-});
 
 
 //Reveal Project Title on Hover

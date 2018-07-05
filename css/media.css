@@ -347,6 +347,8 @@
 
 /*disable clicking on works*/
 
+    #masonry-Kiosked a,
+    #masonry-Ethershift a,
     #masonry-Outclicks a, /*wide*/
     #masonry-Outclicks_Illustration a,
     #masonry-Ambi a, /*wide*/
@@ -720,6 +722,8 @@ tablets, touch (handles portrait mode and bigger mobile screens)
 
 /*disable clicking on works*/
 
+    #masonry-Kiosked a,
+    #masonry-Ethershift a,
     #masonry-Outclicks a, /*wide*/
     #masonry-Outclicks_Illustration a,
     #masonry-Ambi a, /*wide*/
