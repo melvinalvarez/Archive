@@ -44,27 +44,27 @@
                         
                         <div class="box works-line"></div>
                         <span class="menu-number">01</span>
-                        <a href="index"><div id="menu-line-works">works</div></a>
+                        <a href="index.html"><div id="menu-line-works">works</div></a>
                     </li>
                     <li class="menu-line">
                         <div class="box about-line"></div>
                         <span class="menu-number">02</span>
-                        <a href="about"><div id="menu-line-about">about</div></a>
+                        <a href="about.html"><div id="menu-line-about">about</div></a>
                     </li>
                     <li class="menu-line">
                         <div class="box process-line"></div>
                         <span class="menu-number">03</span>
-                        <a href="process"><div id="menu-line-process">process</div></a>
+                        <a href="process.html"><div id="menu-line-process">process</div></a>
                     </li>
                     <li class="menu-line">
                         <div class="box resources-line active-line-anim" style="width:200px;"></div>
                         <span class="menu-number">04</span>
-                        <a href="resources"><div id="menu-line-resources">resources</div></a>
+                        <a href="resources.html"><div id="menu-line-resources">resources</div></a>
                     </li>
                     <li class="menu-line">
                         <div class="box shop-line"></div>
                         <span class="menu-number">05</span>
-                        <a href="shop"><div id="menu-line-shop">shop</div></a>
+                        <a href="shop.htm"><div id="menu-line-shop">shop</div></a>
                     </li>
                 </ul>
                 
@@ -444,8 +444,8 @@
             </div>
         </div>
     
-    <script src="../js/jquery-3.2.1.min.js" type="text/javascript"></script>
-    <script src="../js/jquery.transit.min.js" type="text/javascript"></script>
+    <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="js/jquery.transit.min.js" type="text/javascript"></script>
     <script>
     /*global $*/
         //image-grid placeholder colors
@@ -457,6 +457,36 @@
             $(this).css('background-color', myColors[i]);
             i = (i + 1) % myColors.length;
         });
+    
+        // Key binding
+        $("body").keydown(function(e) {
+          if(e.keyCode == 49) { // 1
+            //your code
+            window.location.href = "index.html";
+            console.log(event.which);
+          }
+          else if(e.keyCode == 50) { // 2
+            //your code
+            window.location.href = "about.html";
+            console.log(event.which);
+          }
+          else if(e.keyCode == 51) { // 3
+            //your code
+            window.location.href = "process.html";
+            console.log(event.which);
+          }
+          else if(e.keyCode == 52) { // 4
+            //your code
+            window.location.href = "resources.html";
+            console.log(event.which);
+          }
+          else if(e.keyCode == 53) { // 5
+            //your code
+            window.location.href = "shop.html";
+            console.log(event.which);
+          }
+        });
+        
     </script>
     <script src="js/isotope.pkgd.js" type="text/javascript"></script>
     <script src="js/packery-mode.pkgd.js" type="text/javascript"></script>

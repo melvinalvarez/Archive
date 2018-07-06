@@ -302,6 +302,32 @@
             $(this).css('background-color', myColors[i]);
             i = (i + 1) % myColors.length;
         });
+    
+    // Key binding
+    
+    $("body").keydown(function(e) {
+      if(e.keyCode == 49) { // 1
+        //your code
+        window.location.href = "index.html";
+      }
+      else if(e.keyCode == 50) { // 2
+        //your code
+        window.location.href = "about.html";
+      }
+      else if(e.keyCode == 51) { // 3
+        //your code
+        window.location.href = "process.html";
+      }
+      else if(e.keyCode == 52) { // 4
+        //your code
+        window.location.href = "resources.html";
+      }
+      else if(e.keyCode == 53) { // 5
+        //your code
+        window.location.href = "shop.html";
+      }
+    });
+        
     </script>
     <script src="../js/isotope.pkgd.js" type="text/javascript"></script>
     <script src="../js/flickity.pkgd.js" type="text/javascript"></script>
