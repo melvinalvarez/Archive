@@ -43,7 +43,6 @@ $('#sidebar-backtotop').click(function(){
     $("html, body").animate({ scrollTop: 0 }, 600);
     return false;
  });
-
 //Experimental Cursor
 
 $("#experimentalCursor").click(function() {

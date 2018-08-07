@@ -775,6 +775,22 @@ tablets, touch (handles portrait mode and bigger mobile screens)
      margin-left: 0;
  }
  
+ .process-header>img {
+     width: 750px;
+ }
+ 
+    .process-masonry {
+        position: relative
+        width: 850px;
+        margin: 0 auto;
+    }
+ 
+     .process-masonry>.grid-item {
+         width: 260px;
+         height: 260px;
+         margin: 2px;
+     }
+ 
  #menu-container {
     display: none;
  }
